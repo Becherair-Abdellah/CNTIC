@@ -1,5 +1,5 @@
 # CNTIC CLUB
-    Welcome to CNTIC CLUB - the Club of Innovation and Technology at Kasdi Merbah Ouargla
+  -  Welcome to CNTIC CLUB - the Club of Innovation and Technology at Kasdi Merbah Ouargla
 ## Table of Contents
 
 - [Project Name](#project-name)
@@ -24,16 +24,16 @@ At CNTIC CLUB, our mission is to create a thriving community that inspires, educ
 ### What We Offer:
 
  #### Workshops and Events:
-     We organize regular workshops, seminars, and tech events featuring expert speakers and hands-on learning experiences. These events cover a wide range of topics, from coding and data science to emerging technologies and entrepreneurial insights.
+- We organize regular workshops, seminars, and tech events featuring expert speakers and hands-on learning experiences. These events cover a wide range of topics, from coding and data science to emerging technologies and entrepreneurial insights.
 
 #### Collaborative Projects:
-      We encourage members to collaborate on exciting projects, whether it's creating a new app, developing hardware, or conducting research. Teamwork and innovation are at the core of our club.
+- We encourage members to collaborate on exciting projects, whether it's creating a new app, developing hardware, or conducting research. Teamwork and innovation are at the core of our club.
 
-####    Knowledge Sharing:
- We believe in the power of knowledge sharing. Members have the opportunity to share their expertise, learn from others, and stay updated on the latest trends and technologies.
+#### Knowledge Sharing:
+- We believe in the power of knowledge sharing. Members have the opportunity to share their expertise, learn from others, and stay updated on the latest trends and technologies.
 
-###    Networking: 
-Connect with like-minded individuals, mentors, and professionals who share your passion for technology and innovation.
+### Networking: 
+- Connect with like-minded individuals, mentors, and professionals who share your passion for technology and innovation.
 
 Join us at CNTIC CLUB and be a part of a community that embraces technology, innovation, and the spirit of learning. Whether you're a seasoned developer or just starting your journey in the world of technology, there's a place for you here. Together, we can shape the future through innovation, one project at a time.
 
@@ -42,13 +42,13 @@ Let's build, create, and inspire together! Welcome to CNTIC CLUB!
 ## Features
 
 List the key features of your project. For example:
-   ##### Membership Registration:
+##### Membership Registration:
     With CNTIC CLUB, you can easily register as a member, becoming part of a vibrant and engaged community dedicated to technology and innovation.
 
-   ##### Interactive Event Engagement:
+##### Interactive Event Engagement:
      React, comment, like, or dislike events to actively participate in the CNTIC CLUB community. Engage with like-minded individuals and stay updated on the latest developments, all within a single club.
 
-   ##### Technology Support Access: 
+##### Technology Support Access: 
     We understand that sometimes, technology can be challenging. That's why CNTIC CLUB offers you the ability to access technology support effortlessly. Whether you need to take notes or report a problem, we've got you covered, ensuring that you can stay focused on what truly matters.
 
 ## Getting Started
