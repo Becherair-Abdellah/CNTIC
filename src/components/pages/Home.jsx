@@ -1,16 +1,18 @@
-import React from 'react'
-import OurGoals from '../homeComponenets/OurGoals'
+import OurGoals from "../homeComponenets/OurGoals";
+import Footer from "../homeComponenets/Footer/Footer";
+import Qoute from "../homeComponenets/qoute/Qoute";
 function Home() {
   return (
     <div>
       {/* navbar */}
       {/* header */}
-      {/* our golas */}<OurGoals />
+      {/* our golas */}
+      <OurGoals />
       {/* members */}
-      {/* quote */}
-      {/* footer */}
+      {/* quote */} <Qoute />
+      {/* footer */} <Footer />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
