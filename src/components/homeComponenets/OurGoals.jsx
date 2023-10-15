@@ -1,23 +1,6 @@
 import React from "react";
+import Section_header from "./Section_header";
 export default function OurGoals() {
-    function OurGoal_Header() {
-        return (
-            <h1
-                className="
-            bg-secondaryColor
-            text-[#3f3f3f]
-             font-bold
-             text-2xl
-             w-80
-             m-auto
-             p-2
-             rounded-md
-            text-center"
-            >
-                Our Goals
-            </h1>
-        );
-    }
     function CardLefted({ title, description }) {
         return (
             <div className=" flex max-w-[80%] m-auto mt-6  items-center mb-6 ">
@@ -47,9 +30,9 @@ export default function OurGoals() {
         );
     }
     return (
-        <div className=" bg-bodyBg pt-5">
-            <OurGoal_Header />
-            <div className=" ">
+        <div className=" pt-5">
+            <Section_header text="Our Goals" />
+            <div>
                 <CardLefted title="test" description="desc" />
                 <CardRighted title="test" description="desc" />
                 <CardLefted title="test" description="desc" />
