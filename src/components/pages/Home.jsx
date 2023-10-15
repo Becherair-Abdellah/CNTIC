@@ -14,6 +14,7 @@ function Home() {
       {/* members */}
       {/* quote */}
       {/* footer */}
+      {/* footer */}
 
       <Footer />
     </div>
