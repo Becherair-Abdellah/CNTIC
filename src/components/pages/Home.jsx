@@ -5,7 +5,7 @@ import Footer from "../homeComponenets/Footer/Footer";
 function Home() {
   return (
     <div className="  bg-bodyBg">
-      {/* navbar */}
+      {/* navbar      */}
       {/* header */}
       {/* our golas */}
       <OurGoals />
