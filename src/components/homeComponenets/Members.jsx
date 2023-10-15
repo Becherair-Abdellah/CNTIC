@@ -4,16 +4,16 @@ export default function Members() {
     
     function BlockOne() {
         return (
-            <div className=" w-[130px]  h-[130px] bg-primaryColor  rounded-full m-auto mt-[20px] "></div>
+            <div className=" w-[100px]  h-[100px] bg-primaryColor  rounded-full m-auto mt-[20px] "></div>
         );
     }
     function BlockTwo() {
         return (
-            <div className=" flex m-auto gap-3 w-fit">
-                <div className=" w-[60px]  h-[60px] bg-primaryColor  rounded-full m-auto mt-[20px] "></div>
-                <div className=" w-[60px]  h-[60px] bg-primaryColor  rounded-full m-auto mt-[20px] "></div>
-                <div className=" w-[60px]  h-[60px] bg-primaryColor  rounded-full m-auto mt-[20px] "></div>
-                <div className=" w-[60px]  h-[60px] bg-primaryColor  rounded-full m-auto mt-[20px] "></div>
+            <div className=" flex m-auto gap-1 w-fit">
+                <div className=" w-[65px]  h-[65px] bg-primaryColor  rounded-full m-auto mt-[20px] "></div>
+                <div className=" w-[65px]  h-[65px] bg-primaryColor  rounded-full m-auto mt-[20px] "></div>
+                <div className=" w-[65px]  h-[65px] bg-primaryColor  rounded-full m-auto mt-[20px] "></div>
+                <div className=" w-[65px]  h-[65px] bg-primaryColor  rounded-full m-auto mt-[20px] "></div>
             </div>
         );
 
