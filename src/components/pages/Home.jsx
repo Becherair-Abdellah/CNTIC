@@ -1,16 +1,15 @@
+import React from "react";
 import OurGoals from "../homeComponenets/OurGoals";
-import Footer from "../homeComponenets/Footer/Footer";
-import Qoute from "../homeComponenets/qoute/Qoute";
 function Home() {
   return (
-    <div>
+    <div className="  bg-bodyBg">
       {/* navbar */}
       {/* header */}
       {/* our golas */}
       <OurGoals />
       {/* members */}
-      {/* quote */} <Qoute />
-      {/* footer */} <Footer />
+      {/* quote */}<
+      {/* footer */}
     </div>
   );
 }
