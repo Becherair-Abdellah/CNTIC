@@ -1,5 +1,7 @@
 import React from "react";
 import OurGoals from "../homeComponenets/OurGoals";
+import Members from "../homeComponenets/Members";
+import Qoute from "../homeComponenets/qoute/Qoute";
 function Home() {
   return (
     <div className="  bg-bodyBg">
@@ -7,8 +9,10 @@ function Home() {
       {/* header */}
       {/* our golas */}
       <OurGoals />
+      <Members/>
+      <Qoute/>
       {/* members */}
-      {/* quote */}<
+      {/* quote */}
       {/* footer */}
     </div>
   );
