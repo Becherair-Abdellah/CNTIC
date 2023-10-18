@@ -4,17 +4,19 @@ import Qoute from "../homeComponenets/qoute/Qoute";
 import Footer from "../homeComponenets/Footer/Footer";
 function Home() {
   return (
-    <div className="  bg-bodyBg">
-      {/* navbar      */}
+    <div className="bg-bodyBg">
+    <div className="w-[90%] mx-auto ">
+  {/* navbar      */}
       {/* header */}
       {/* our golas */}
       <OurGoals />
-      <Members />
-      <Qoute />
+      {/* <Members /> */}
+      {/* <Qoute /> */}
       {/* members */}
       {/* quote */}
       {/* footer */}
-      <Footer />
+      {/* <Footer /> */}
+    </div>
     </div>
   );
 }
