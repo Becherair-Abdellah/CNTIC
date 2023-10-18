@@ -4,6 +4,7 @@ function Card({title,nbr,description,subject}) {
   return (
       <div className="flex items-center gap-4 bg-white rounded-tl-xl rounded-br-xl shadow-sm relative">
         
+        
         <span className='w-[90%] h-[1.7px] absolute top-0 right-0 bg-primaryColor'></span>
         <span className='w-[2px] h-[90%] absolute top-0 right-0 bg-primaryColor'></span>
           <div className=" bg-primaryColor flex flex-col gap-1 p-4 rounded-tl-xl rounded-br-xl">
