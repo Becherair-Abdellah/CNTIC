@@ -13,6 +13,11 @@ export default {
         },
         fontFamily : {
             ubuntu : ["Ubuntu","sans-serif"]
+        },
+        gridTemplateColumns:{
+          custom: '35% auto',
+          customMd: '25% auto',
+          customXl: '40% auto',
         }
       },
     },

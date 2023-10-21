@@ -10,8 +10,8 @@ function Home() {
       {/* header */}
       {/* our golas */}
       <OurGoals />
-      {/* <Members /> */}
-      {/* <Qoute /> */}
+      <Members />
+      {/* <Qoute />  */}
       {/* members */}
       {/* quote */}
       {/* footer */}
