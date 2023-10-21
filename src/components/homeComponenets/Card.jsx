@@ -14,7 +14,7 @@ function Card({ title, nbr, description, subject }) {
       {/* info  */}
       <div className="p-4">
         <h3 className="font-bold text-primaryColor text-xl">{subject}</h3>
-        <p className="text-[15px]">{description}</p>
+        <p className="text-sm text-gray-700">{description}</p>
         <div className="bg-primaryColor text-white  text-[12px] w-fit p-1 px-2 rounded-tl-lg rounded-br-lg cursor-pointer absolute right-0 bottom-0">
           <a href="">read more</a>
         </div>
