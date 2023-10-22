@@ -1,9 +1,10 @@
 import OurGoals from "../homeComponenets/OurGoals";
 import Members from "../homeComponenets/Members";
-import Qoute from "../homeComponenets/qoute/Qoute";
-import Footer from "../homeComponenets/Footer/Footer";
+import Qoute from "../homeComponenets/Qoute";
+import Footer from "../homeComponenets/Footer";
 function Home() {
   return (
+
     <div className="bg-bodyBg">
     <div className="w-[90%] mx-auto ">
   {/* navbar      */}
@@ -11,13 +12,11 @@ function Home() {
       {/* our golas */}
       <OurGoals />
       <Members />
-      {/* <Qoute />  */}
-      {/* members */}
-      {/* quote */}
-      {/* footer */}
-      {/* <Footer /> */}
     </div>
+      <Qoute /> 
+      <Footer /> 
     </div>
+
   );
 }
 
