@@ -12,7 +12,8 @@ export default {
             secondaryColor: "#D1D1D1",
         },
         fontFamily : {
-            ubuntu : ["Ubuntu","sans-serif"]
+            ubuntu : ["Ubuntu","sans-serif"],
+            Playpen : ["Playpen Sans","cursive"],
         },
         gridTemplateColumns:{
           custom: '35% auto',
