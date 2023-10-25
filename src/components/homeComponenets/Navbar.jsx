@@ -21,6 +21,8 @@ function Navbar() {
           <div className='w-[150px] h-[150px] rounded-tl-full bg-primaryColor right-0 bottom-0 absolute md:hidden'></div>
           <button className='text-lg absolute right-[1rem] top-[1rem] bg-primaryColor font-bold text-white px-2 rounded-tl-lg rounded-br-lg md:hidden' onClick={()=>{
             setShow(true);
+          document.body.classList.remove('overflow-hidden');
+
           }}>X</button>
         <ul className='flex justify-center items-center gap-4 flex-col w-full mb-8 font-bold text-lg text-gray-600 md:flex-row md:mb-0'>
             <li className='hover:text-primaryColor cursor-pointer'>home</li>
@@ -36,6 +38,7 @@ function Navbar() {
         </div>
         <VscThreeBars size={30} color='white' className='cursor-pointer z-[11] md:hidden' onClick={()=>{
           setShow(false);
+          document.body.classList.add('overflow-hidden');
         }}/>
       </div>
    
