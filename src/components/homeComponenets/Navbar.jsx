@@ -4,7 +4,7 @@ import {VscThreeBars} from 'react-icons/vsc'
 import BtnLogin from '../BtnLogin'
 function Navbar() {
   const [login,setLogin] = useState(false);
-  const [show,setShow] = useState(false);
+  const [show,setShow] = useState(true);
   const classes = `fixed left-0 top-0 bg-white w-full h-full z-[111] flex justify-center items-center flex-col md:relative duration-300 md:bg-bodyBg md:flex-row ${show?'left-[-100%]':''} md:left-0`;
   return (
    

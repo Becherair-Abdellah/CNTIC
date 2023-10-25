@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 body{
-    @apply font-ubuntu;
+    @apply font-ubuntu overflow-x-hidden;
 }
 /* .gr{
     background: url("./assets/bitmap.svg");
