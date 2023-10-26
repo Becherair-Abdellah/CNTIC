@@ -4,14 +4,16 @@ import Qoute from "../homeComponenets/Qoute";
 import Footer from "../homeComponenets/Footer";
 import Navbar from "../homeComponenets/Navbar";
 import Hero from "../homeComponenets/Hero";
+import News from "../homeComponenets/News";
 function Home() {
   return (
     <div className="bg-bodyBg">
       <div className="w-[90%] mx-auto ">
         <Navbar />
         <Hero />
-        {/* header */}
-        {/* our golas */}
+        <div>
+          <News/>
+        </div>
         <OurGoals />
         <Members />
       </div>
