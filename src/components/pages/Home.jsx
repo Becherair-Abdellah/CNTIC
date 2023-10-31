@@ -6,21 +6,21 @@ import Navbar from "../homeComponenets/Navbar";
 import Hero from "../homeComponenets/Hero";
 import News from "../homeComponenets/News";
 function Home() {
-  return (
-    <div className="bg-bodyBg">
-      <div className="w-[90%] mx-auto ">
-        <Navbar />
-        <Hero />
-        <div>
-          <News/>
+    return (
+        <div className="bg-bodyBg">
+            <div className="w-[90%] mx-auto ">
+                <Navbar />
+                <Hero />
+                <div>
+                    <News />
+                </div>
+                <OurGoals />
+                <Members />
+            </div>
+            <Qoute />
+            <Footer />
         </div>
-        <OurGoals />
-        <Members />
-      </div>
-      <Qoute />
-      <Footer />
-    </div>
-  );
+    );
 }
 
 export default Home;
