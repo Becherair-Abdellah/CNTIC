@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BiLike, BiDislike, BiComment } from "react-icons/bi";
-
+import EventComment from "./EventComment";
 export default function EventsElement() {
     const [CommentCounter, SetCommentCounter] = useState(123);
 
@@ -9,7 +9,7 @@ export default function EventsElement() {
     const [isLiked, setIsLiked] = useState(false);
     const [isDisliked, setIsDisliked] = useState(false);
 
-    const handleLikeClick = () => {
+     const handleLikeClick = () => {
         if (isDisliked) {
             SetDisLikeCounter((prevCounter) => prevCounter - 1);
             SetLikeCounter((prevCounter) => prevCounter + 1);
@@ -53,8 +53,9 @@ export default function EventsElement() {
     };
 
     return (
-        <div
-            className="
+        <div>
+            <div
+                className="
             text-[#3f3f3f]
              font-bold
              m-auto
@@ -63,97 +64,102 @@ export default function EventsElement() {
              mb-[10px]
              p-4
              relative
+             bg-PostsBg
              "
-        >
-            {/* Event Header */}
-            <div className="flex justify-between items-center mb-1">
-                <img
-                    src="../../public/logo.png"
-                    alt=""
-                    className=" w-[3.3rem]"
-                />
-                <div className="text-gray-400 text-lg">26 Sep 2023</div>
-            </div>
-            <hr className=" border-gray-300 border-[1.5px] mb-4" />
-            {/* Event Text */}
-            <div>
-                {showMore ? (
-                    <span
-                        className="inline text-[12px] md:text-[16px]"
-                        dangerouslySetInnerHTML={{ __html: EventText }}
+            >
+                {/* Event Header */}
+                <div className="flex justify-between items-center mb-1">
+                    <img
+                        src="../../public/logo.png"
+                        alt=""
+                        className=" w-[3.3rem]"
                     />
-                ) : (
-                    <span
-                        className="inline text-[12px] md:text-[16px]"
-                        dangerouslySetInnerHTML={{
-                            __html: EventText.slice(0, 150),
-                        }}
-                    />
-                )}
-                {/* Show more|less btn */}
-                {EventText.length > 150 && (
-                    <span
-                        className="text-primaryColor cursor-pointer text-[12px] md:text-[16px]"
-                        onClick={toggleShowMore}
-                    >
-                        {showMore ? " Read Less" : "...Read More"}
-                    </span>
-                )}
-            </div>
-            {/* Event Image */}
-            <div>
-                <img
-                    src="../../src/assets/hero.png"
-                    alt=""
-                    className=" w-[100%] md:w-[80%] m-auto"
-                />
-            </div>
-            <hr className=" border-gray-300 border-[1.5px] mt-4 mb-4" />
-            {/* Like | Comment btns */}
-            <div className="flex justify-around items-center select-none">
-                <div
-                    className="text-gray-400 cursor-pointer"
-                    onClick={handleLikeClick}
-                >
-                    <BiLike
-                        className={`text-2xl ${
-                            isLiked ? "text-blue-500" : "text-gray-400"
-                        }`}
-                    />
-                    <span
-                        className={`text-[14px] ${
-                            isLiked ? "text-blue-500" : "text-gray-400"
-                        }`}
-                    >
-                        {LikeCounter}
-                    </span>
+                    <div className="text-gray-400 text-lg">26 Sep 2023</div>
                 </div>
-                <div className="text-gray-400 cursor-pointer">
-                    <BiComment className=" text-2xl" />
-                    <span className="text-[14px]">{CommentCounter}</span>
+                <hr className=" border-gray-300 border-[1.5px] mb-4" />
+                {/* Event Text */}
+                <div>
+                    {showMore ? (
+                        <span
+                            className="inline text-[12px] md:text-[16px]"
+                            dangerouslySetInnerHTML={{ __html: EventText }}
+                        />
+                    ) : (
+                        <span
+                            className="inline text-[12px] md:text-[16px]"
+                            dangerouslySetInnerHTML={{
+                                __html: EventText.slice(0, 150),
+                            }}
+                        />
+                    )}
+                    {/* Show more|less btn */}
+                    {EventText.length > 150 && (
+                        <span
+                            className="text-primaryColor cursor-pointer text-[12px] md:text-[16px]"
+                            onClick={toggleShowMore}
+                        >
+                            {showMore ? " Read Less" : "...Read More"}
+                        </span>
+                    )}
                 </div>
-                <div
-                    className="text-gray-400 cursor-pointer"
-                    onClick={handleDislikeClick}
-                >
-                    <BiDislike
-                        className={`text-2xl ${
-                            isDisliked ? "text-blue-500" : "text-gray-400"
-                        }`}
+                {/* Event Image */}
+                <div>
+                    <img
+                        src="../../src/assets/hero.png"
+                        alt=""
+                        className=" w-[100%] md:w-[80%] m-auto"
                     />
-                    <span
-                        className={`text-[14px] ${
-                            isDisliked ? "text-blue-500" : "text-gray-400"
-                        }`}
-                    >
-                        {DisLikeCounter}
-                    </span>
                 </div>
+                <hr className=" border-gray-300 border-[1.5px] mt-4 mb-4" />
+                {/* Like | Comment btns */}
+                <div className="flex justify-around items-center select-none">
+                    <div
+                        className="text-gray-400 cursor-pointer"
+                        onClick={handleLikeClick}
+                    >
+                        <BiLike
+                            className={`text-2xl ${
+                                isLiked ? "text-blue-500" : "text-gray-400"
+                            }`}
+                        />
+                        <span
+                            className={`text-[14px] ${
+                                isLiked ? "text-blue-500" : "text-gray-400"
+                            }`}
+                        >
+                            {LikeCounter}
+                        </span>
+                    </div>
+                    <div className="text-gray-400 cursor-pointer">
+                        <BiComment className=" text-2xl" />
+                        <span className="text-[14px]">{CommentCounter}</span>
+                    </div>
+                    <div
+                        className="text-gray-400 cursor-pointer"
+                        onClick={handleDislikeClick}
+                    >
+                        <BiDislike
+                            className={`text-2xl ${
+                                isDisliked ? "text-blue-500" : "text-gray-400"
+                            }`}
+                        />
+                        <span
+                            className={`text-[14px] ${
+                                isDisliked ? "text-blue-500" : "text-gray-400"
+                            }`}
+                        >
+                            {DisLikeCounter}
+                        </span>
+                    </div>
+                </div>
+                <span className="w-[180px] h-[3px] absolute top-0 right-0 bg-primaryColor"></span>
+                <span className="w-[3px] h-[180px] absolute top-0 right-0 bg-primaryColor"></span>
+                <span className="w-[180px] h-[4px] absolute bottom-0 left-0 bg-primaryColor"></span>
+                <span className="w-[3px] h-[180px] absolute bottom-0 left-0 bg-primaryColor"></span>
             </div>
-            <span className="w-[40px] h-[1.7px] absolute top-0 right-0 bg-primaryColor"></span>
-            <span className="w-[2.5px] h-[30px] absolute top-0 right-0 bg-primaryColor"></span>
-            <span className="w-[40px] h-[3px] absolute bottom-0 left-0 bg-primaryColor"></span>
-            <span className="w-[3px] h-[30px] absolute bottom-0 left-0 bg-primaryColor"></span>
+            {/* Event Comments */}
+            <EventComment/>
         </div>
     );
+
 }

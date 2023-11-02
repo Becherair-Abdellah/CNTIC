@@ -9,6 +9,10 @@ export default function Events() {
         <div className=" bg-bodyBg">
             <Navbar />
             <EventsElement />
+            <EventsElement />
+            <EventsElement />
+            <EventsElement />
+            <div className=" mb-10"></div>
             <Footer />
         </div>
     );
