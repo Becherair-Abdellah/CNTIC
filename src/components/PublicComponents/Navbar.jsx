@@ -10,7 +10,7 @@ function Navbar() {
     } md:left-0`;
     return (
         <div className="w-full flex justify-between items-center md:py-6 relative">
-            <div className="w-[65px] h-[65px] rounded-bl-full bg-primaryColor right-[-1rem] top-0 fixed md:hidden"></div>
+            <div className="w-[65px] h-[65px] rounded-bl-full bg-primaryColor right-[-1rem] top-0 fixed md:hidden z-10"></div>
             {/* logo  */}
             <div className="text-gray-600 font-semibold text-2xl font-Playpen">
                 <strong className="text-5xl font-bold text-primaryColor relative top-[.4rem] ">

@@ -9,7 +9,7 @@ export default function EventsElement() {
     const [isLiked, setIsLiked] = useState(false);
     const [isDisliked, setIsDisliked] = useState(false);
 
-     const handleLikeClick = () => {
+    const handleLikeClick = () => {
         if (isDisliked) {
             SetDisLikeCounter((prevCounter) => prevCounter - 1);
             SetLikeCounter((prevCounter) => prevCounter + 1);
@@ -59,7 +59,7 @@ export default function EventsElement() {
             text-[#3f3f3f]
              font-bold
              m-auto
-             w-[70%]
+             w-[90%] md:w-[70%] 
              mt-10
              mb-[10px]
              p-4
@@ -81,12 +81,12 @@ export default function EventsElement() {
                 <div>
                     {showMore ? (
                         <span
-                            className="inline text-[12px] md:text-[16px]"
+                            className="inline text-[14px] md:text-[16px]"
                             dangerouslySetInnerHTML={{ __html: EventText }}
                         />
                     ) : (
                         <span
-                            className="inline text-[12px] md:text-[16px]"
+                            className="inline text-[14px] md:text-[16px]"
                             dangerouslySetInnerHTML={{
                                 __html: EventText.slice(0, 150),
                             }}
@@ -158,8 +158,11 @@ export default function EventsElement() {
                 <span className="w-[3px] h-[180px] absolute bottom-0 left-0 bg-primaryColor"></span>
             </div>
             {/* Event Comments */}
-            <EventComment/>
+            <EventComment
+                text={
+                    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, blanditiis qui corrupti cum, sunt maiores vel, cumque voluptate tempora distinctio eius! Perferendis deserunt iste temporibus, quasi voluptatibus ab ut iusto!"
+                }
+            />
         </div>
     );
-
 }

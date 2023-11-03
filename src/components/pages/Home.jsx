@@ -2,7 +2,7 @@ import OurGoals from "../homeComponenets/OurGoals";
 import Members from "../homeComponenets/Members";
 import Qoute from "../homeComponenets/Qoute";
 import Footer from "../homeComponenets/Footer";
-import Navbar from "../homeComponenets/Navbar";
+import Navbar from "../PublicComponents/Navbar";
 import Hero from "../homeComponenets/Hero";
 import News from "../homeComponenets/News";
 function Home() {

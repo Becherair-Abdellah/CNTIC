@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BiLike, BiDislike } from "react-icons/bi";
 
-export default function EventComment() {
+export default function EventComment({text}) {
     const [Comment_LikeCounter, SetComment_LikeCounter] = useState(541);
     const [Comment_DisLikeCounter, SetComment_DisLikeCounter] = useState(541);
     const [Comment_isLiked, SetComment_isLiked] = useState(false);
@@ -30,23 +30,45 @@ export default function EventComment() {
             SetComment_isDisliked(true);
         }
     };
-
+const [showMore, setShowMore] = useState(false);
+const toggleShowMore = () => {
+    setShowMore(!showMore);
+};
     return (
         <div>
-            <div className="w-[70%] m-auto bg-PostsBg p-2">
+            <div className="w-[90%] md:w-[70%] m-auto bg-PostsBg p-2">
                 <h2 className="text-gray-400 text-xl font-bold">Comments</h2>
-                <div className="flex items-start relative">
+                <div className="md:flex items-start relative">
                     <span className="w-[3px] h-[100%] absolute left-0 bg-primaryColor"></span>
                     <img
                         src="../../../src/assets/avatar.png"
                         alt=""
                         className="w-14"
                     />
-                    <div className="bg-gray-300 p-2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quos expedita tempore soluta? Earum, a sunt. Aperiam
-                        sint ab odio rerum enim? Vero minus non quia autem
-                        tempora, praesentium ut vel.
+
+                    <div className="bg-gray-300 p-2 font-bold ml-2 md:ml-0">
+                        {showMore ? (
+                            <span
+                                className="inline text-[14px] md:text-[16px]"
+                                dangerouslySetInnerHTML={{ __html: text }}
+                            />
+                        ) : (
+                            <span
+                                className="inline text-[14px] md:text-[16px]"
+                                dangerouslySetInnerHTML={{
+                                    __html: text.slice(0, 100),
+                                }}
+                            />
+                        )}
+                        {/* Show more|less btn */}
+                        {text.length > 100 && (
+                            <span
+                                className="text-primaryColor cursor-pointer text-[12px] md:text-[16px]"
+                                onClick={toggleShowMore}
+                            >
+                                {showMore ? " Read Less" : "...Read More"}
+                            </span>
+                        )}
                     </div>
                     <div className="flex justify-around items-center select-none">
                         <div
@@ -54,14 +76,14 @@ export default function EventComment() {
                             onClick={handleLikeClick}
                         >
                             <BiLike
-                                className={`text-2xl ${
+                                className={`text-xl md:text-2xl ${
                                     Comment_isLiked
                                         ? "text-blue-500"
                                         : "text-gray-400"
                                 }`}
                             />
                             <span
-                                className={`text-[14px] font-bold ${
+                                className={`text-[13px] md:text-[14px] font-bold  ${
                                     Comment_isLiked
                                         ? "text-blue-500"
                                         : "text-gray-400"
@@ -75,14 +97,14 @@ export default function EventComment() {
                             onClick={handleDislikeClick}
                         >
                             <BiDislike
-                                className={`text-2xl ${
+                                className={`text-xl md:text-2xl ${
                                     Comment_isDisliked
                                         ? "text-blue-500"
                                         : "text-gray-400"
                                 }`}
                             />
                             <span
-                                className={`text-[14px] font-bold  ${
+                                className={`text-[13px] md:text-[14px] font-bold  ${
                                     Comment_isDisliked
                                         ? "text-blue-500"
                                         : "text-gray-400"
