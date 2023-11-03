@@ -1,11 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body{
+body {
     @apply font-ubuntu overflow-x-hidden;
 }
-/* .gr{
-    background: url("./assets/bitmap.svg");
-} */
+.HomeLoading {
+    border: 7px solid rgba(255, 255, 255, 0.3);
+    border-top: 7px solid #025ebf;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    animation: HomeLoading_spin 1s linear infinite;
+}
+
+@keyframes HomeLoading_spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
