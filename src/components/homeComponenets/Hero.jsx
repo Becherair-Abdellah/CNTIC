@@ -1,7 +1,7 @@
 
 // import Button from '../Button'
 import IMG from '../../assets/hero.png'
-
+import React from 'react'
 import SocialMedia from './SocialMedia'
 function Hero() {
   return (

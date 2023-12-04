@@ -1,3 +1,4 @@
+import React from "react";
 export default function Section_header({ text }) {
     return (
         <h1
