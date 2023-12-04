@@ -1,4 +1,3 @@
-import Footer from "./Footer";
 function Qoute() {
   return (
   <div className=" text-gray-800 mb-12 p-3 ">
