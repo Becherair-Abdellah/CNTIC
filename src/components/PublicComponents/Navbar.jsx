@@ -10,7 +10,7 @@ function Navbar() {
     } md:left-0`;
     return (
         <>
-            <div className="w-full flex justify-between items-center  fixed bg-[#e9e9e9] top-0 left-0 shadow-xl z-20">
+            <div className="w-full flex justify-between items-center  fixed bg-[#e9e9e9] top-0 left-0 shadow-xl z-20 px-10">
                 <div className="w-[65px] h-[65px] rounded-bl-full bg-primaryColor right-[-1rem] top-0 fixed md:hidden z-10"></div>
                 {/* logo  */}
                 <div className="text-gray-600 font-semibold text-2xl font-Playpen p-2 flex justify-center items-center">
@@ -54,8 +54,8 @@ function Navbar() {
                     </ul>
                     {/* buttons and profile */}
                     <div className="flex items-center gap-6 flex-col w-full md:flex-row md:w-fit">
-                        <BtnLogin content="SignIn" />
-                        <BtnLogin content="SignUp" />
+                        <BtnLogin content="Login" />
+                        {/* <BtnLogin content="SignUp" /> */}
                     </div>
                 </div>
                 <VscThreeBars
