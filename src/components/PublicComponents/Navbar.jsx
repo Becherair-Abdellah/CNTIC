@@ -10,10 +10,10 @@ function Navbar() {
     } md:left-0`;
     return (
         <>
-            <div className="w-full flex justify-between items-center  fixed bg-[#e9e9e9] top-0 left-0 shadow-xl z-20 px-10">
+            <div className="w-full flex justify-between items-center  fixed bg-[#e9e9e9] top-0 left-0 shadow-xl z-20 px-10 py-2">
                 <div className="w-[65px] h-[65px] rounded-bl-full bg-primaryColor right-[-1rem] top-0 fixed md:hidden z-10"></div>
                 {/* logo  */}
-                <div className="text-gray-600 font-semibold text-2xl font-Playpen p-2 flex justify-center items-center">
+                <div className="text-gray-600 font-semibold text-2xl font-Playpen  flex justify-center items-center">
                     <strong className="text-5xl font-bold text-primaryColor  ">
                         C
                     </strong>
@@ -47,6 +47,9 @@ function Navbar() {
                         </li>
                         <li className="hover:text-primaryColor cursor-pointer">
                             Blog
+                        </li>
+                        <li className="hover:text-primaryColor cursor-pointer">
+                            Projects
                         </li>
                         <li className="hover:text-primaryColor cursor-pointer">
                             Contact Us
