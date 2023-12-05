@@ -24,7 +24,7 @@ function Navbar() {
                     <BsFillExclamationSquareFill
                         size={25}
                         color="white"
-                        className="absolute right-[1rem] bottom-[1rem] z-[11] cursor-pointer md:hidden"
+                        className="absolute right-[1rem] bottom-[2rem] z-[11] cursor-pointer md:hidden"
                         // style={{ position: "fixed" }}
                     />
                     <div className="w-[120px] h-[120px] rounded-br-full bg-primaryColor left-0 top-0 absolute md:hidden"></div>
@@ -64,7 +64,7 @@ function Navbar() {
                 <VscThreeBars
                     size={30}
                     color="white"
-                    className="fixed right-1 cursor-pointer z-[11] md:hidden"
+                    className="fixed right-1 top-3 cursor-pointer z-[11] md:hidden"
                     onClick={() => {
                         setShow(false);
                         document.body.classList.add("overflow-hidden");
