@@ -1,0 +1,13 @@
+.parkpark::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 5px;
+}
+
+.parkpark::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+.parkpark::-webkit-scrollbar-thumb {
+  background-color: rgb(156, 156, 156);
+  border-radius: 5px;
+}

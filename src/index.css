@@ -4,23 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 body {
-    @apply font-ubuntu overflow-x-hidden;
+  @apply font-ubuntu overflow-x-hidden;
 }
 .HomeLoading {
-    border: 7px solid rgba(255, 255, 255, 0.3);
-    border-top: 7px solid #025ebf;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    margin: auto;
-    animation: HomeLoading_spin 1s linear infinite;
+  border: 7px solid rgba(255, 255, 255, 0.3);
+  border-top: 7px solid #025ebf;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  animation: HomeLoading_spin 1s linear infinite;
 }
 
 @keyframes HomeLoading_spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
