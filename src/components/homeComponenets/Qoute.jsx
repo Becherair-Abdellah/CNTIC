@@ -1,4 +1,4 @@
-import Footer from "./Footer";
+import React from "react";
 function Qoute() {
   return (
   <div className=" text-gray-800 mb-12 p-3 ">

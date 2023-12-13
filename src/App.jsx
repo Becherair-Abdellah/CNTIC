@@ -1,21 +1,20 @@
-import React from 'react'
-import { BrowserRouter as Router ,Routes , Route} from 'react-router-dom'
-import Home from './components/pages/Home'
-import Posts from './components/pages/Posts'
-import ContactUs from './components/pages/ContactUs'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/pages/Home";
+import Events from "./components/pages/Events";
+import ContactUs from "./components/pages/ContactUs";
+import Articals from "./components/OurArticles/Articals";
 function App() {
   return (
-    
     <Router>
       <Routes>
-        <Route exact path="/" element={<Posts/>} />
-        <Route exact path="/home" element={<Home/>} />
-        <Route exact path="/contact" element={<ContactUs/>} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/Posts" element={<Events />} />
+        <Route exact path="/contact" element={<ContactUs />} />
+        <Route exact path="/Articals" element={<Articals />} />
       </Routes>
     </Router>
-    
-  )
+  );
 }
 
-export default App
-
+export default App;
