@@ -8,7 +8,7 @@ function Email() {
     <div href="#" className="hidden items-center mb-6 text-2xl font-semibold md:flex text-gray-900  flex-col">
         <img className="w-[400px] h-[350px] m-auto" src={Logo} alt="logo" />
         <h1 className="text-3xl relative text-primaryColor ">
-            Your Email to Reset Password
+             Reset Password
             <span className='w-[40px] h-[3px] absolute top-[-.43rem] right-[-.43rem]  bg-primaryColor'></span>
     <span className='w-[3px] h-[30px] absolute top-[-.43rem] right-[-.43rem] bg-primaryColor'></span>
 
@@ -16,7 +16,7 @@ function Email() {
     <span className='w-[3px] h-[30px] absolute bottom-[-.43rem] left-[-.43rem] bg-primaryColor'></span></h1>
       </div>
     </div>
-   <section className="w-[70%] md:w-[50%] z-[11]">
+   <section className="w-[100%] md:w-[50%] z-[11]">
     <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
       <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0  ">
         <div className="p-6 space-y-4 md:space-y-6 sm:p-8 relative">
