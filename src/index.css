@@ -6,6 +6,12 @@
 body {
   @apply font-ubuntu overflow-x-hidden;
 }
+body,html{
+  height: 100vh;
+}
+#root,#root .parent{
+  height: 100%;
+}
 .HomeLoading {
   border: 7px solid rgba(255, 255, 255, 0.3);
   border-top: 7px solid #025ebf;
