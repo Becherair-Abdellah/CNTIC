@@ -2,7 +2,7 @@ import React from "react";
 import image from "../../assets/i1.jpg";
 function OurArticleCard() {
   return (
-    <div className=" relative w-[280px] h-fit mx-auto mt-5 ">
+    <div className=" relative w-[280px] h-fit mx-auto mt-5 mx-3 ">
       <div></div>
       <img src={image} className=" w-[100%]  h-36 object-top " />
 
@@ -15,10 +15,10 @@ function OurArticleCard() {
         </div>
       </div>
 
-      <span className="w-[40px] h-[4px] absolute -top-1 right-0 bg-primaryColor"></span>
-      <span className="w-[4px] h-[50px] absolute top-0 -right-0 bg-primaryColor"></span>
-      <span className="w-[40px] h-[4px] absolute -bottom-1 -left-1 bg-primaryColor"></span>
-      <span className="w-[4px] h-[50px] absolute -bottom-1 -left-1 bg-primaryColor"></span>
+      <span className="w-[40px] h-[4px] absolute -top-2 -right-1 bg-primaryColor"></span>
+      <span className="w-[4px] h-[50px] absolute -top-2 -right-2 bg-primaryColor"></span>
+      <span className="w-[40px] h-[4px] absolute -bottom-2 -left-2 bg-primaryColor"></span>
+      <span className="w-[4px] h-[50px] absolute -bottom-2 -left-2 bg-primaryColor"></span>
     </div>
   );
 }

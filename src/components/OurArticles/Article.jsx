@@ -3,29 +3,29 @@ import imgArt from "../../assets/i1.jpg";
 const data = {
   title: "Coding Chronicles: Navigating the Web Development Odyssey🚀",
 };
-function Articals() {
+function Article() {
   return (
-    <div className="w-[1000px] m-auto">
-      <div className=" w-[1000px] mt-10 m-auto text-blue-800  text-center text-6xl font-bold font-['Ubuntu'] leading-20 ">
+    <div className=" max-lg:w-screen w-[1000px]  m-auto">
+      <div className=" max-lg:w-screen w-[1000px] mt-10 m-auto text-blue-800  text-center text-3xl font-bold font-['Ubuntu'] leading-20 ">
         {data.title}
       </div>
-      <div className=" w-[1000px]   h-20 flex justify-between m-auto mt-10">
-        <div className=" h-16    text-neutral-400 text-xl font-bold font-['Ubuntu'] leading-10">
+      <div className=" max-lg:w-screen w-[1000px]  h-10 flex justify-between m-auto mt-5">
+        <div className=" h-10    text-neutral-400 text-xl font-bold font-['Ubuntu'] leading-10">
           12 oct 2023
         </div>
-        <div className=" h-16    text-neutral-500 text-xl font-bold font-['Ubuntu'] leading-10">
+        <div className=" h-10    text-neutral-500 text-xl font-bold font-['Ubuntu'] leading-10">
           By Mohamed{" "}
         </div>
       </div>
       <div className=" flex justify-center items-center">
-        <img className="w-[1000px] h-[500px] object-cover" src={imgArt} />
+        <img className="w-[1000px] h-[400px] object-cover" src={imgArt} />
       </div>
 
-      <div className=" mb-5 w-[1000px] mt-10  mx-auto text-black text-3xl font-bold font-['Ubuntu'] leading-10">
+      <div className=" mb-5 max-lg:w-screen w-[1000px]  mt-10  mx-auto text-black text-3xl font-bold font-['Ubuntu'] leading-10">
         🌟 Embark on a Digital Odyssey with CodeExplorer91 🌟
       </div>
 
-      <div className="w-[1000px] px-5 mx-auto text-neutral-700 text-xl font-medium font-['Ubuntu'] leading-8">
+      <div className="max-lg:w-screen w-[1000px] px-5 mx-auto text-neutral-700 text-xl font-medium font-['Ubuntu'] leading-8 mb-10">
         Dive into the enchanting world of web development with me,
         CodeExplorer91, as we unravel the secrets of the digital realm. 🕵️‍♂️ In
         this blog, Ill be your guide through insights, tips, and the occasional
@@ -56,4 +56,4 @@ function Articals() {
   );
 }
 
-export default Articals;
+export default Article;
