@@ -3,9 +3,11 @@ import imgArt from "../../assets/i1.jpg";
 const data = {
   title: "Coding Chronicles: Navigating the Web Development Odyssey🚀",
 };
+import "./ourArticleStyle.css";
+
 function Article() {
   return (
-    <div className=" max-lg:w-screen w-[1000px]  m-auto ">
+    <div className=" relative max-lg:w-screen w-[1000px]  m-auto ">
       <div className=" max-lg:w-screen w-[1000px] max-lg:mt-5  mt-5 m-auto text-blue-800  text-center text-3xl max-lg:text-xl font-bold font-['Ubuntu'] leading-20 ">
         {data.title}
       </div>
@@ -21,6 +23,7 @@ function Article() {
         <img className="w-[1000px] h-[400px] object-cover" src={imgArt} />
       </div>
 
+      <div id="blorr" className="blorr"></div>
       <div className=" mb-5 max-lg:w-screen w-[1000px]  mt-10  mx-auto text-black text-3xl px-5 lg:text-2xl font-bold font-['Ubuntu'] leading-10">
         🌟 Embark on a Digital Odyssey with CodeExplorer91 🌟
       </div>

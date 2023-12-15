@@ -14,10 +14,14 @@ function Navbar() {
       <div className="w-full flex justify-between items-center  fixed bg-[#e9e9e9] top-0 left-0 shadow-xl z-20 px-10 py-2">
         <div className="w-[65px] h-[65px] rounded-bl-full bg-primaryColor right-[-1rem] top-0 fixed md:hidden z-10"></div>
         {/* logo  */}
-        <div className="text-gray-600 font-semibold text-2xl font-Playpen  flex justify-center items-center">
+
+        <Link
+          to="/"
+          className="text-gray-600 font-semibold text-2xl font-Playpen  flex justify-center items-center"
+        >
           <strong className="text-5xl font-bold text-primaryColor  ">C</strong>
           NTIC
-        </div>
+        </Link>
         {/* LINKS  */}
         <div className={classes}>
           <BsFillExclamationSquareFill
@@ -38,18 +42,27 @@ function Navbar() {
             X
           </button>
           <ul className="flex justify-center items-center gap-4 flex-col w-full mb-8 font-bold text-lg text-gray-600 md:flex-row md:mb-0">
-            <li className="hover:text-primaryColor cursor-pointer">home</li>
+            <Link to="/" className="hover:text-primaryColor cursor-pointer">
+              home
+            </Link>
             <Link
               to="/events"
               className="hover:text-primaryColor cursor-pointer"
             >
               Events
             </Link>
-            <li className="hover:text-primaryColor cursor-pointer">Blog</li>
-            <li className="hover:text-primaryColor cursor-pointer">Projects</li>
-            <li className="hover:text-primaryColor cursor-pointer">
+            <Link to="/blog" className="hover:text-primaryColor cursor-pointer">
+              Blog
+            </Link>
+            <Link className="hover:text-primaryColor cursor-pointer">
+              Projects
+            </Link>
+            <Link
+              to="/contact"
+              className="hover:text-primaryColor cursor-pointer"
+            >
               Contact Us
-            </li>
+            </Link>
           </ul>
           {/* buttons and profile */}
           <div className="flex items-center gap-6 flex-col w-full md:flex-row md:w-fit">
