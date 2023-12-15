@@ -4,7 +4,6 @@ import Footer from "../PublicComponents/Footer";
 import EventsElement from "../EventsComponents/EventsElement";
 import OurArticle from "../OurArticles/OurArticle";
 export default function Events() {
-  const [loaded, setloaded] = useState(false);
   return (
     <div className=" bg-white">
       <Navbar />

@@ -24,18 +24,20 @@ function OurArticle() {
       } overflow-scroll  px-2 pb-20`}
     >
       {" "}
-      <div className="w-[100%]  pt-10 text-center text-primaryColor text-[29px] font-bold font-['Ubuntu'] leading-[10px]">
+      <div className="w-[100%]  pt-5 text-center text-primaryColor text-[29px] font-bold font-['Ubuntu'] leading-[10px]">
         Our Articles
       </div>
-      <div className="flex mt-5 justify-center items-center ">
-        <img src={afterTitle} alt="" className="h-10 " />
-        <img src={afterTitle} alt="" className="h-10" />
-        <img src={afterTitle} alt="" className="h-10" />
-        <img src={afterTitle} alt="" className="h-10" />
-        <img src={afterTitle} alt="" className="h-10" />
-        <img src={afterTitle} alt="" className="h-10" />
-        <img src={afterTitle} alt="" className="h-10" />
-        <img src={afterTitle} alt="" className="h-10" />
+      <div className="flex mt-5 justify-center items-center pr-5 ">
+        <img src={afterTitle} alt="" className="h-7 " />
+        <img src={afterTitle} alt="" className="h-7" />
+        <img src={afterTitle} alt="" className="h-7" />
+        <img src={afterTitle} alt="" className="h-7" />
+        <img src={afterTitle} alt="" className="h-7" />
+        <img src={afterTitle} alt="" className="h-7" />
+        <img src={afterTitle} alt="" className="h-7" />
+        <img src={afterTitle} alt="" className="h-7" />
+        <img src={afterTitle} alt="" className="h-7" />
+        <img src={afterTitle} alt="" className="h-7" />
       </div>
       <OurArticleCard />
       <OurArticleCard />
