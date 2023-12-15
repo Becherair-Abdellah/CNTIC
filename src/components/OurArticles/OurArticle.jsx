@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import afterTitle from "../../assets/afterTitleItem.svg";
 import OurArticleCard from "./OurArticleCard";
 import "./ourArticleStyle.css";
+import { Link } from "react-router-dom";
 function OurArticle() {
   const [scrolledToEnd, setScrolledToEnd] = useState(false);
   const threshold = 50; // Adjust this value as needed
@@ -18,33 +19,35 @@ function OurArticle() {
     return () => window.removeEventListener("scroll", () => {});
   }, []);
   return (
-    <div
-      className={` parkpark fixed ${
-        scrolledToEnd ? "h-[70vh]" : "h-screen"
-      } overflow-scroll  px-2 pb-20`}
-    >
-      {" "}
-      <div className="w-[100%]  pt-5 text-center text-primaryColor text-[29px] font-bold font-['Ubuntu'] leading-[10px]">
-        Our Articles
+    <Link to="/blog/articles">
+      <div
+        className={` parkpark fixed ${
+          scrolledToEnd ? "h-[70vh]" : "h-screen"
+        } overflow-scroll  px-2 pb-20`}
+      >
+        {" "}
+        <div className="w-[100%]  pt-5 text-center text-primaryColor text-[29px] font-bold font-['Ubuntu'] leading-[10px]">
+          Our Articles
+        </div>
+        <div className="flex mt-5 justify-center items-center pr-5 ">
+          <img src={afterTitle} alt="" className="h-7 " />
+          <img src={afterTitle} alt="" className="h-7" />
+          <img src={afterTitle} alt="" className="h-7" />
+          <img src={afterTitle} alt="" className="h-7" />
+          <img src={afterTitle} alt="" className="h-7" />
+          <img src={afterTitle} alt="" className="h-7" />
+          <img src={afterTitle} alt="" className="h-7" />
+          <img src={afterTitle} alt="" className="h-7" />
+          <img src={afterTitle} alt="" className="h-7" />
+          <img src={afterTitle} alt="" className="h-7" />
+        </div>
+        <OurArticleCard />
+        <OurArticleCard />
+        <OurArticleCard />
+        <OurArticleCard />
+        <OurArticleCard />
       </div>
-      <div className="flex mt-5 justify-center items-center pr-5 ">
-        <img src={afterTitle} alt="" className="h-7 " />
-        <img src={afterTitle} alt="" className="h-7" />
-        <img src={afterTitle} alt="" className="h-7" />
-        <img src={afterTitle} alt="" className="h-7" />
-        <img src={afterTitle} alt="" className="h-7" />
-        <img src={afterTitle} alt="" className="h-7" />
-        <img src={afterTitle} alt="" className="h-7" />
-        <img src={afterTitle} alt="" className="h-7" />
-        <img src={afterTitle} alt="" className="h-7" />
-        <img src={afterTitle} alt="" className="h-7" />
-      </div>
-      <OurArticleCard />
-      <OurArticleCard />
-      <OurArticleCard />
-      <OurArticleCard />
-      <OurArticleCard />
-    </div>
+    </Link>
   );
 }
 
