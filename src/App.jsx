@@ -9,6 +9,7 @@ import Signin from "./dashboard/Signin";
 import Email from "./dashboard/Email";
 import Signup from "./dashboard/Signup";
 import Blogs from "./components/pages/Blogs";
+import ResetPassword from "./dashboard/ResetPassword";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route exact path="/dashboard" element={<Dashboard/>}/>
       <Route exact path="/dashboard/signin" element={<Signin/>}/>
       <Route exact path="/dashboard/Email" element={<Email/>}/>
+      <Route exact path="/dashboard/reset_password" element={<ResetPassword/>}/>
       <Route exact path="/events" element={<Events/>}/>
       <Route exact path="/contact" element={<ContactUs/>}/>
       <Route exact path="/blog" element={<Blogs/>}/>

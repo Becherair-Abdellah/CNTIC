@@ -17,7 +17,7 @@ function Signin() {
     <span className='w-[3px] h-[30px] absolute bottom-[-.43rem] left-[-.43rem] bg-primaryColor'></span></h1>
       </div>
     </div>
-   <section className="z-[11] relative">
+   <section className="z-[11] relative w-full">
     <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
       <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0  ">
         <div className="p-6 space-y-4 md:space-y-6 sm:p-8 relative">
@@ -26,11 +26,11 @@ function Signin() {
     <span className='w-[40px] h-[4px] absolute bottom-[-.43rem] left-[-.43rem] bg-primaryColor'></span>
     <span className='w-[4px] h-[30px] absolute bottom-[-.43rem] left-[-.43rem] bg-primaryColor'></span>
           <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-3xl ">
-           Hi Admin welecom back
+           Hi Admin welecom back! 👋
           </h1>
           <form className="space-y-4 md:space-y-6" action="#">
             <div>
-              <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+              <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-600 ">email</label>
               <input
                 type="email"
                 name="email"
@@ -41,7 +41,7 @@ function Signin() {
               />
             </div>
             <div>
-              <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+              <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-600 ">Password</label>
               <input
                 type="password"
                 name="password"
