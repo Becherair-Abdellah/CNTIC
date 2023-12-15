@@ -9,7 +9,7 @@ export default function Events() {
     <div className=" bg-white">
       <Navbar />
       <div className=" flex justify-around items-start mt-5">
-        <div className=" border-r-2  border-solid border-purple-300 h-fit">
+        <div className=" max-xl:hidden border-r-2  border-solid border-purple-300 h-fit">
           <OurArticle />
         </div>
         <div className="w-[70%]">
