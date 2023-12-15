@@ -4,8 +4,8 @@ import { Link } from "react-router-dom"
 function Signin() {
   return (
    <>
-   <div className="parent  flex justify-evenly items-center">
-    <div>
+   <div className="parent  flex justify-center  items-center">
+    <div className="md:w-full">
     <div href="#" className="hidden items-center mb-6 text-2xl font-semibold md:flex text-gray-900  flex-col">
         <img className="w-[400px] h-[350px]" src={Logo} alt="logo" />
         <h1 className="text-3xl relative text-white bg-primaryColor">
@@ -25,7 +25,7 @@ function Signin() {
     <span className='w-[4px] h-[30px] absolute top-[-1.4rem] md:top-[-1.7rem] right-[-.43rem] bg-primaryColor'></span>
     <span className='w-[40px] h-[4px] absolute bottom-[-.43rem] left-[-.43rem] bg-primaryColor'></span>
     <span className='w-[4px] h-[30px] absolute bottom-[-.43rem] left-[-.43rem] bg-primaryColor'></span>
-          <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-3xl ">
+          <h1 className=" font-bold leading-tight tracking-tight text-gray-900 text-3xl ">
            Hi Admin welecom back! 👋
           </h1>
           <form className="space-y-4 md:space-y-6" action="#">
