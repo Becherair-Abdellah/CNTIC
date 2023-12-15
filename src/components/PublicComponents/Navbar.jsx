@@ -46,7 +46,7 @@ function Navbar() {
                             Events
                         </li>
                         <li className="hover:text-primaryColor cursor-pointer">
-                            Blog
+                            <a href="/Blogs">Blogs</a>
                         </li>
                         <li className="hover:text-primaryColor cursor-pointer">
                             Projects
