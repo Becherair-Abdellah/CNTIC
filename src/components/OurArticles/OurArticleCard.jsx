@@ -4,7 +4,7 @@ function OurArticleCard() {
   return (
     <div className=" relative w-[280px] h-fit mx-auto mt-5 ">
       <div></div>
-      <img src={image} className=" w-[100%]  h-36 object-cover" />
+      <img src={image} className=" w-[100%]  h-36 object-top " />
 
       <div className="pb-3 px-2 bg-zinc-100">
         <div className=" text-blue-800 text-[15px] font-bold font-['Ubuntu'] leading-3 pt-5 pb-2">
