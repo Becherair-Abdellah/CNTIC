@@ -10,6 +10,9 @@ export default {
         secondaryColor: "#D1D1D1",
         titleColor: "rgb(30 103 189)",
       },
+      screens:{
+        'lo':'350px',
+        },
       fontFamily: {
         ubuntu: ["Ubuntu", "sans-serif"],
         Playpen: ["Playpen Sans", "cursive"],
