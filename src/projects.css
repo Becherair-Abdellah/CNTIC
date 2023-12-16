@@ -1,7 +1,8 @@
 
-@media (min-width:370px) {
+
+@media (min-width:350px) {
     .longSvg{
-        width: 270px;
+        width: 200px;
         height: 45px;
     }
 }
