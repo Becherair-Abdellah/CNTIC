@@ -16,10 +16,13 @@ import Signup from "./dashboard/Signup";
 import Blogs from "./components/pages/Blogs";
 import ResetPassword from "./dashboard/ResetPassword";
 import Articals from "./components/pages/Articals";
-
+// use redux toolkit for state managment
+import  store  from "./dashboard/redux/store";
+import { Provider } from "react-redux";
 function App() {
   return (
-    <Router>
+    <Provider store={store}>
+      <Router>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/dashboard" element={<Dashboard />} />
@@ -36,6 +39,7 @@ function App() {
         <Route exact path="/blog/articles" element={<Articals />} />
       </Routes>
     </Router>
+    </Provider>
   );
 }
 

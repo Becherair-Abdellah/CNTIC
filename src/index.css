@@ -12,6 +12,9 @@ body {
 #root,#root,body, .parent{
   height: 100%;
 } */
+.calc{
+  width: calc(100% - 300px);
+}
 .HomeLoading {
   border: 7px solid rgba(255, 255, 255, 0.3);
   border-top: 7px solid #025ebf;
