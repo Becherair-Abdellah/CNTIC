@@ -1,0 +1,31 @@
+
+
+@media (min-width:350px) {
+    .longSvg{
+        width: 200px;
+        height: 45px;
+    }
+}
+
+@media (min-width:1024px) {
+    .longSvg{
+        width: 380px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
