@@ -4,7 +4,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 
 const initialState = {
-  aside: 0,
+  aside: 1,
 }
 
 const show_and_hide_aside = createSlice({
