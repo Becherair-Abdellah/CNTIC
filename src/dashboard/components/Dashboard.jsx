@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {FaBars } from "react-icons/fa"
+import { Routes,Route } from 'react-router'
 import {FiSearch,FiMoon} from "react-icons/fi"
 import {LuLanguages} from "react-icons/lu"
 import Aside from './Aside'
@@ -25,7 +26,7 @@ function Dashboard() {
        <FaBars  size={20} />
        </div>
        <div className='flex'>
-       <div className='hover:bg-gray-100  p-3 rounded-full cursor-pointer text-gray-500 z-[11]  '>
+       <div className='hover:bg-gray-100  p-3 rounded-full cursor-pointer text-gray-500 z-[11] md:hover:bg-transparent'>
         <FiSearch size={20} className=' ' onClick={()=>{console.log(true)}}/>
         </div>
         <form  className='flex-1 w-full   ml-5 md:ml-0 relative  items-center gap-5'>
@@ -52,11 +53,12 @@ function Dashboard() {
           
        
       </header>
+
       <div className={styles}>
-      {/* <Routes>
-        <Route exact path="/" element={<Main />} />
+      <Routes>
+        <Route exact path="/dashboard" element={<h1>Abdellah Becherair</h1>} />
         <Route exact path="*" element={<h1>Not Found It !!</h1>} />
-      </Routes> */}
+      </Routes>
       </div>
       <Aside/>
     </div>
