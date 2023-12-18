@@ -10,14 +10,17 @@ import Search from './Search'
 import Main from './Main'
 import { FaSleigh } from 'react-icons/fa'
 import { useSelector,useDispatch } from 'react-redux'
+import Signout from './Signout'
 // import actions 
 import {show} from "../redux/Reducers"
+import { show_signout } from '../redux/Reducers'
 function Dashboard() {
   const styles = `main_page relative py-[24px]  animated-bg_test text-white  h-[2000px]`;
   const dispatch = useDispatch();
   const showAside = useSelector(({show_and_hide_aside:{aside}})=>aside);
   return (
     <div className=''>
+      <Signout/>
       <header className=' select-none fixed w-full z-[1] flex justify-between items-center p-2 md:w-cuWidth md:left-[70px]'>
         {/* search  */}
         {/* <Search/> */}
@@ -44,11 +47,18 @@ function Dashboard() {
           <div className=' hover:bg-gray-100 p-3 rounded-full cursor-pointer'>
           <LuLanguages   size={20} className='cursor-pointer text-gray-500'/>
           </div>
-          <div className='hover:bg-gray-100 p-2  rounded-full cursor-pointer'>
+
+
+          <div className='hover:bg-gray-100 p-2  rounded-full cursor-pointer' onClick={()=>{
+            dispatch(show_signout());
+            console.log('ren time for');}
+        }>
           <div className='w-[30px] h-[30px] '>
             <img src={img} className='h-full w-full object-cover rounded-full cursor-pointer' alt="" />
           </div>
           </div>
+
+
           </div>
           
        

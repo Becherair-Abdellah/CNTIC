@@ -5,6 +5,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
   aside: 1,
+  signout : 0,
 }
 
 const show_and_hide_aside = createSlice({
@@ -18,11 +19,17 @@ const show_and_hide_aside = createSlice({
     hide: state => {
          state.aside = 0
     },
+    show_signout: state => {
 
+        state.signout = !state.signout;
+    },
+    hide_signout : state => {
+      state.signout = 0
+    },
   },
-})
+});
 
 // Action creators are generated for each case reducer function
-export const { show, hide } = show_and_hide_aside.actions
+export const { show, hide ,show_signout,hide_signout} = show_and_hide_aside.actions
 
 export default show_and_hide_aside.reducer

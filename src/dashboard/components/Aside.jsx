@@ -20,7 +20,7 @@ function Aside() {
     }
     document.addEventListener('mousedown',handleClick);
 
-  },[])
+  },[]);
   return (
     <aside ref={aside} className={styles}>
      <div>
