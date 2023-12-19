@@ -1,7 +1,7 @@
 import React from "react";
 function Qoute() {
   return (
-  <div className=" text-gray-800 mb-12 p-3 ">
+  <div className=" text-gray-800  p-4 pb-8">
       <figure className="max-w-screen-md mx-auto text-center ">
 
       <svg
