@@ -46,7 +46,7 @@ function Navbar() {
               home
             </Link>
             <Link
-              to="/events"
+              to="/Events"
               className="hover:text-primaryColor cursor-pointer"
             >
               Events
@@ -58,7 +58,7 @@ function Navbar() {
               Projects
             </Link>
             <Link
-              to="/contact"
+              to="/Contact"
               className="hover:text-primaryColor cursor-pointer"
             >
               Contact Us

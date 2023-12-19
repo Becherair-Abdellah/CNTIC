@@ -14,35 +14,34 @@ import Signin from "./dashboard/Signin";
 import Email from "./dashboard/Email";
 import Signup from "./dashboard/Signup";
 import ResetPassword from "./dashboard/ResetPassword";
-// import Articals from "./components/pages/Articals";
 import { Outlet } from "react-router-dom";
 // use redux toolkit for state managment
 import  store  from "./dashboard/redux/store";
 import { Provider } from "react-redux";
-// import Articals from "./components/OurArticles/Articals";
+import Articals from "./components/pages/Articals";
 import Blogs from "./components/pages/Blogs"
 function App() {
   return (
     <Provider store={store}>
       <Router>
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/dashboard" element={<Dashboard />}>
-          
-          
-        </Route>
-        <Route exact path="/dashboard/signin" element={<Signin />} />
-        <Route exact path="/dashboard/Email" element={<Email />} />
-        <Route
-          exact
-          path="/dashboard/reset_password"
-          element={<ResetPassword />}
-        />
-        <Route exact path="/events" element={<Events />} />
-        <Route exact path="/contact" element={<ContactUs />} />
-        <Route exact path="/Blogs" element={<Blogs />} />
-        {/* <Route exact path="/Blogs/Article" element={<Articals />} />         */}
-      </Routes>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/dashboard" element={<Dashboard />}>
+            
+            
+          </Route>
+          <Route exact path="/dashboard/signin" element={<Signin />} />
+          <Route exact path="/dashboard/Email" element={<Email />} />
+          <Route
+            exact
+            path="/dashboard/reset_password"
+            element={<ResetPassword />}
+          />
+          <Route exact path="/Events" element={<Events />} />
+          <Route exact path="/Contact" element={<ContactUs />} />
+          <Route exact path="/Blogs" element={<Blogs />} />
+          <Route exact path="/Blogs/Article" element={<Articals />} />        
+        </Routes>
     </Router>
     </Provider>
   );
