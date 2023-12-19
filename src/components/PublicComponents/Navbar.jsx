@@ -11,7 +11,7 @@ function Navbar() {
   } md:left-0`;
   return (
     <>
-      <div className="w-full flex justify-between items-center  fixed bg-[#e9e9e9] top-0 left-0 shadow-xl z-20 px-10 py-2">
+      <div className="w-full flex justify-between items-center  fixed bg-[#e9e9e9] top-0 left-0 shadow-xl z-20 px-2 md:px-10 py-2">
         <div className="w-[65px] h-[65px] rounded-bl-full bg-primaryColor right-[-1rem] top-0 fixed md:hidden z-10"></div>
         {/* logo  */}
 
@@ -53,9 +53,6 @@ function Navbar() {
             </Link>
             <Link to="/Blogs" className="hover:text-primaryColor cursor-pointer">
               Blog
-            </Link>
-            <Link className="hover:text-primaryColor cursor-pointer">
-              Projects
             </Link>
             <Link
               to="/Contact"
