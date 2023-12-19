@@ -3,7 +3,7 @@ import './App.css'
 
 
 
-function Projects(){
+function Header(){
 
 return(
 <>
@@ -111,6 +111,6 @@ return(
 )
 }
 
-export default Projects
+export default Header
 
 
