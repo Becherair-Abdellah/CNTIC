@@ -6,7 +6,6 @@ import OurArticle from "../OurArticles/OurArticle";
 export default function Events() {
   return (
     <div className=" bg-white">
-      <Navbar />
       <div className=" flex justify-around items-start mt-5">
         <div className=" max-xl:hidden border-r-2  border-solid border-purple-300 h-fit">
           <OurArticle />
@@ -20,7 +19,6 @@ export default function Events() {
       </div>
 
       <div className=" mb-10"></div>
-      <Footer />
     </div>
   );
 }
