@@ -23,6 +23,9 @@ export default {
         customMd: "25% auto",
         customXl: "40% auto",
       },
+      width:{
+        cuWidth : 'calc(100% - 70px)',
+      }
     },
   },
   plugins: [],
