@@ -43,7 +43,7 @@ function Navbar() {
           </button>
           <ul className="flex justify-center items-center gap-4 flex-col w-full mb-8 font-bold text-lg text-gray-600 md:flex-row md:mb-0">
             <Link to="/" className="hover:text-primaryColor cursor-pointer">
-              home
+              Home
             </Link>
             <Link
               to="/Events"
