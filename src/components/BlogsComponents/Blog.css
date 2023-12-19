@@ -1,0 +1,63 @@
+.search::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    width: 8%;
+    height: 8%;
+    background-color: transparent;
+    border-left: 3px solid #0044AA;
+    border-bottom: 3px solid #0044AA;
+    padding: 15px;
+}
+
+.search::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 8%;
+    height: 8%;
+    background-color: transparent;
+    border-right: 3px solid #0044AA;
+    border-top: 3px solid #0044AA;
+    padding: 15px;
+}
+
+
+.blog::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    width: 15%;
+    height: 10%;
+    background-color: transparent;
+    border-left: 7px solid #0044AA;
+    border-bottom: 7px solid #0044AA;
+    padding: 15px;
+}
+
+.blog::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 15%;
+    height: 10%;
+    background-color: transparent;
+    border-right: 7px solid #0044AA;
+    border-top: 7px solid #0044AA; 
+    padding: 15px;
+}
+
+.read::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 20%;
+    height: 100%;
+    background-color: #E7E7E7;
+    transform: skewX(-30deg);
+}

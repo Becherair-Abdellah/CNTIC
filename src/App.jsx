@@ -20,6 +20,8 @@ import { Outlet } from "react-router-dom";
 // use redux toolkit for state managment
 import  store  from "./dashboard/redux/store";
 import { Provider } from "react-redux";
+import Articals from "./components/OurArticles/Articals";
+import Blogs from "./components/pages/Blogs"
 function App() {
   return (
     <Provider store={store}>
@@ -39,8 +41,8 @@ function App() {
         />
         <Route exact path="/events" element={<Events />} />
         <Route exact path="/contact" element={<ContactUs />} />
-        <Route exact path="/blog" element={<Blogs />} />
-        <Route exact path="/blog/articles" element={<Articals />} />
+        <Route exact path="/Blogs" element={<Blogs />} />
+        <Route exact path="/Blogs/Article" element={<Articals />} />        
       </Routes>
     </Router>
     </Provider>
