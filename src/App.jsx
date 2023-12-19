@@ -13,14 +13,13 @@ import Dashboard from "./dashboard/components/Dashboard";
 import Signin from "./dashboard/Signin";
 import Email from "./dashboard/Email";
 import Signup from "./dashboard/Signup";
-import Blogs from "./components/pages/Blogs";
 import ResetPassword from "./dashboard/ResetPassword";
-import Articals from "./components/pages/Articals";
+// import Articals from "./components/pages/Articals";
 import { Outlet } from "react-router-dom";
 // use redux toolkit for state managment
 import  store  from "./dashboard/redux/store";
 import { Provider } from "react-redux";
-import Articals from "./components/OurArticles/Articals";
+// import Articals from "./components/OurArticles/Articals";
 import Blogs from "./components/pages/Blogs"
 function App() {
   return (
@@ -42,7 +41,7 @@ function App() {
         <Route exact path="/events" element={<Events />} />
         <Route exact path="/contact" element={<ContactUs />} />
         <Route exact path="/Blogs" element={<Blogs />} />
-        <Route exact path="/Blogs/Article" element={<Articals />} />        
+        {/* <Route exact path="/Blogs/Article" element={<Articals />} />         */}
       </Routes>
     </Router>
     </Provider>

@@ -51,7 +51,7 @@ function Navbar() {
             >
               Events
             </Link>
-            <Link to="/blog" className="hover:text-primaryColor cursor-pointer">
+            <Link to="/Blogs" className="hover:text-primaryColor cursor-pointer">
               Blog
             </Link>
             <Link className="hover:text-primaryColor cursor-pointer">
