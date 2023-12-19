@@ -9,7 +9,7 @@ import Signin from "./dashboard/Signin";
 import Email from "./dashboard/Email";
 import Signup from "./dashboard/Signup";
 import ResetPassword from "./dashboard/ResetPassword";
-import Article from "./components/pages/Articals";
+import Article from "./components/pages/Article";
 import Blogs from "./components/pages/Blogs"
 const routes = createBrowserRouter([
     {
