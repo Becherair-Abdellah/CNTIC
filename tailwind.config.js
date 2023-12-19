@@ -17,6 +17,7 @@ export default {
         ubuntu: ["Ubuntu", "sans-serif"],
         Playpen: ["Playpen Sans", "cursive"],
       },
+      
       gridTemplateColumns: {
         custom: "35% auto",
         customMd: "25% auto",
