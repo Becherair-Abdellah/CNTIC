@@ -80,7 +80,6 @@ function Navbar() {
           }}
         />
       </div>
-      <div className=" pb-16"></div>
     </>
   );
 }
