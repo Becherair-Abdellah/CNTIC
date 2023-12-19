@@ -19,7 +19,6 @@ function Home() {
                 <Members />
             </div>
             <Qoute />
-            <Footer />
         </div>
     );
 }
