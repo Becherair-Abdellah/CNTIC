@@ -2,7 +2,7 @@
 // import Button from '../Button'
 import IMG from '../../assets/hero.png'
 import React from 'react'
-import SocialMedia from './SocialMedia'
+import SocialMedia from '../PublicComponents/SocialMedia'
 function Hero() {
   return (
     <div className='md:grid lg:grid-cols-2 gap-[5rem] py-[3rem]'>
