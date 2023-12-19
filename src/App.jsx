@@ -26,10 +26,7 @@ function App() {
       <Router>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/dashboard" element={<Dashboard />}>
-          
-          
-        </Route>
+        <Route exact path="/dashboard" element={<Dashboard />}/>
         <Route exact path="/dashboard/signin" element={<Signin />} />
         <Route exact path="/dashboard/Email" element={<Email />} />
         <Route

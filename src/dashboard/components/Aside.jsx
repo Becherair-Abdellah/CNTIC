@@ -37,7 +37,7 @@ function Aside() {
     {/* footer  */}
     <div className='text-gray-500 text-sm font-normal w-full text-center'>
       <span className={showAside?' text-center relative bottom-4':'hidden'}>© 2023 <strong className=' text-primaryColor'>CNTIC</strong>,Inc. All rights reserved</span>
-      <span className={showAside?' text-center md:hidden':'block'}>© 2023</span>
+      <span className={showAside?' text-center hidden':'md:block hidden'}>© 2023</span>
       </div>
   </aside>
   )
