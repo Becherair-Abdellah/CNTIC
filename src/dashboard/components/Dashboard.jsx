@@ -14,11 +14,11 @@ import Signout from './Signout'
 // import actions 
 import {show} from "../redux/Reducers"
 import { show_signout } from '../redux/Reducers'
-import { BrowserRouter } from 'react-router-dom'
+import Users from './Users'
 function Dashboard() {
-  const styles = `main_page relative py-[24px]  animated-bg_test text-white  h-[2000px]`;
-  const dispatch = useDispatch();
   const showAside = useSelector(({show_and_hide_aside:{aside}})=>aside);
+  const styles = `main_page relative py-[24px] md:ml-[70px] top-[38px] animated-bg_test text-white flex justify-between p-[1rem]`;
+  const dispatch = useDispatch();
   return (
     <div className=''>
       <Signout/>
@@ -66,6 +66,7 @@ function Dashboard() {
       </header>
 
       <div className={styles}>
+        <Users/>
       </div>
       <Aside/>
     </div>

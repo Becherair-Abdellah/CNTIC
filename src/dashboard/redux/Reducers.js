@@ -4,7 +4,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 
 const initialState = {
-  aside: 1,
+  aside: 0,
   signout : 0,
 }
 
