@@ -9,7 +9,7 @@ function Signout() {
     const signout = useRef();
     const dispatch = useDispatch();
     const showAside = useSelector(({show_and_hide_aside:{signout}})=>signout);
-    const style = `absolute right-[3%] top-[7%] bg-gray-100 py-3 px-5 rounded-lg border-blue-500 border-[1.5px] z-[11] ${showAside?"":"hidden"}`;
+    const style = `absolute right-[3%] top-[7%] bg-gray-100 p-3 rounded-lg border-blue-500 border-[1.5px] z-[11] ${showAside?"":"hidden"}`;
 
     useEffect(()=>{
    
@@ -26,12 +26,12 @@ function Signout() {
     
     <div className={style} ref={signout}>
         
-     <div className='flex items-center  gap-2 py-5 cursor-pointer ' >
+     <div className='flex items-center  gap-2 cursor-pointer ' >
       <img className='w-[50px]' src={logo} alt="" />
-      <h1 className="text-xl font-semibold text-gray-700">cntic.club@gmail.com</h1>
+      <h1 className="text- font-semibold text-gray-700">cntic.club@gmail.com</h1>
      
      </div>
-      <li className='flex items-center gap-3 p-3 px-2 text-[15px] w-full hover:bg-gray-200 cursor-pointer  mb-3 rounded-md text-gray-600 ' ><FaSignOutAlt size={21}/>Sign Out</li>
+      <li className='flex items-center gap-3 p-3 px-2 text-[15px] w-full hover:bg-gray-200 cursor-pointer  mb-3 rounded-md text-gray-600 mt-4' ><FaSignOutAlt size={21}/>Sign Out</li>
     </div>
   )
 }

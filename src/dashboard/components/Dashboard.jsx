@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {FaBars } from "react-icons/fa"
-import { Routes,Route } from 'react-router'
+import { Routes,Route, Outlet } from 'react-router'
 import {FiSearch,FiMoon} from "react-icons/fi"
 import {LuLanguages} from "react-icons/lu"
 import Aside from './Aside'
@@ -14,14 +14,16 @@ import Signout from './Signout'
 // import actions 
 import {show} from "../redux/Reducers"
 import { show_signout } from '../redux/Reducers'
+import Users from './Users'
+import Events from './Events'
 function Dashboard() {
-  const styles = `main_page relative py-[24px]  animated-bg_test text-white  h-[2000px]`;
+  // const showAside = useSelector(({show_and_hide_aside:{aside}})=>aside);
+  const styles = `main_page relative py-[24px] md:ml-[70px] top-[38px] animated-bg_test text-white flex justify-between p-[1rem]`;
   const dispatch = useDispatch();
-  const showAside = useSelector(({show_and_hide_aside:{aside}})=>aside);
   return (
     <div className=''>
       <Signout/>
-      <header className=' select-none fixed w-full z-[1] flex justify-between items-center p-2 md:w-cuWidth md:left-[70px]'>
+      <header className=' select-none bg-white fixed w-full z-[1] flex justify-between items-center p-2 md:w-cuWidth md:left-[70px]'>
         {/* search  */}
         {/* <Search/> */}
         <div className='flex items-center gap-3'>
@@ -65,10 +67,8 @@ function Dashboard() {
       </header>
 
       <div className={styles}>
-      <Routes>
-        <Route exact path="/dashboard" element={<h1>Abdellah Becherair</h1>} />
-        <Route exact path="*" element={<h1>Not Found It !!</h1>} />
-      </Routes>
+        {/* <Users /> */}
+        <Events/>
       </div>
       <Aside/>
     </div>
