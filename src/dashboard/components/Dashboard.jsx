@@ -22,7 +22,7 @@ function Dashboard() {
   return (
     <div className=''>
       <Signout/>
-      <header className=' select-none fixed w-full z-[1] flex justify-between items-center p-2 md:w-cuWidth md:left-[70px]'>
+      <header className=' select-none bg-white fixed w-full z-[1] flex justify-between items-center p-2 md:w-cuWidth md:left-[70px]'>
         {/* search  */}
         {/* <Search/> */}
         <div className='flex items-center gap-3'>
@@ -66,7 +66,7 @@ function Dashboard() {
       </header>
 
       <div className={styles}>
-        <Users/>
+        <Users />
       </div>
       <Aside/>
     </div>
