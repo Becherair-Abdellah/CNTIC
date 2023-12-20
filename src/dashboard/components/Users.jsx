@@ -21,7 +21,7 @@ function Users() {
       <p className='text-gray-500 text-md font-semibold mt-8 leading-6 border-l-[3px] border-primaryColor pl-3 md:pl-1'>Hi Admin This All Members in your Website <strong className='text-primaryColor'>CNTIC Club</strong> You can to check of users and you can to block or delete account </p>
       {/* users  */}
       <div className='users mt-7 overflow-hidden overflow-x-visible relative'>
-        <div className='overlay hidden w-full h-full absolute left-0 top-0 bg-transparent  z-[1]'></div>
+        <div className='overlay hidden w-[850px] md:w-full h-full absolute left-0 top-0 bg-transparent  z-[1]'></div>
         <ul className='text-gray-500 w-[850px] md:w-full'>
             <li className=' grid grid-cols-manyCustom  p-2 text-white rounded-md mb-2 bg-gradient-to-r from-blue-700 to-blue-500    font-semibold'>
                 <span>User</span>
