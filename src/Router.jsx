@@ -21,7 +21,6 @@ const routes = createBrowserRouter([
             { path: "/Contact", element: <ContactUs /> },
             { path: "/Blogs", element: <Blogs /> },
             { path: "/Articles/:ArticleId", element: <Article /> },
-            
         ],
     },
     {
@@ -29,13 +28,13 @@ const routes = createBrowserRouter([
         element: <Dashboard />,
         children: [
             // { index: true, element: <Dashboard /> },
-            { path: "/Dashboard/Signin", element: <Signin /> },
-            { path: "/Dashboard/Email", element: <Email /> },
-            { path: "/Dashboard/reset_password", element: <ResetPassword /> },
-            
         ],
     },
-    
+    { path: "/Dashboard/Signin", element: <Signin /> },
+    { path: "/Dashboard/Email", element: <Email /> },
+
+    { path: "/Dashboard/reset_password", element: <ResetPassword /> },
+    { path: "/Dashboard/Email", element: <Email /> },
 ]);
 
 export default routes;
