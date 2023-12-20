@@ -26,7 +26,10 @@ function Events() {
                 <label htmlFor="text" className='text-gray-600 font-semibold'>Comment</label>
                 <textarea rows={3} className='p-3 text-gray-600 outline-none rounded-md resize-none' type="text" placeholder='write comment here ... !' />
                 </div>
-
+               <div className='mt-4'>
+                <label htmlFor="" className='text-gray-600'>Pictures</label>
+                <input type="file" />
+               </div>
             </form>
         </div>
      </div>
