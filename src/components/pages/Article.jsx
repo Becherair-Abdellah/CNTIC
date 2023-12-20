@@ -3,7 +3,7 @@ import imgArt from "../../assets/i1.jpg";
 const data = {
   title: "Coding Chronicles: Navigating the Web Development Odyssey🚀",
 };
-import "./ourArticleStyle.css";
+import "../OurArticles/ourArticleStyle.css";
 
 function Article() {
   return (

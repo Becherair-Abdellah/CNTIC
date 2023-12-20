@@ -2,7 +2,7 @@ import React from "react";
 import image from "../../assets/i1.jpg";
 function OurArticleCard() {
   return (
-    <div className=" relative w-[280px] h-fit mx-auto mt-5 mx-3 ">
+    <div className=" relative w-[280px] h-fit  mt-5 mx-3 ">
       <div></div>
       <img src={image} className=" w-[100%]  h-36 object-top " />
 

@@ -1,27 +1,10 @@
-import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Home from "./components/pages/Home";
-import Events from "./components/pages/Events";
-import ContactUs from "./components/pages/ContactUs";
-import Dashboard from "./dashboard/components/Dashboard";
-import Signin from "./dashboard/Signin";
-import Email from "./dashboard/Email";
-import Signup from "./dashboard/Signup";
-import Blogs from "./components/pages/Blogs";
-import ResetPassword from "./dashboard/ResetPassword";
-import Articals from "./components/pages/Articals";
-import { Outlet } from "react-router-dom";
-// use redux toolkit for state managment
-import  store  from "./dashboard/redux/store";
-import { Provider } from "react-redux";
-function App() {
+import React from 'react'
+import Navbar from './components/PublicComponents/Navbar'
+import { Outlet } from 'react-router'
+import Footer from './components/PublicComponents/Footer'
+export default function App() {
   return (
+<<<<<<< HEAD
     <Provider store={store}>
       <Router>
       <Routes>
@@ -43,5 +26,15 @@ function App() {
     </Provider>
   );
 }
+=======
+    <div>
+      <Navbar />
+>>>>>>> 6b39e99d405b965bd4961eba31010eb7eb23cb95
 
-export default App;
+      <div className=' min-h-[calc(100vh-85px)] pt-[64px]'>
+        <Outlet />
+      </div>
+      <Footer/>
+    </div>
+  )
+}

@@ -11,7 +11,7 @@ function Navbar() {
   } md:left-0`;
   return (
     <>
-      <div className="w-full flex justify-between items-center  fixed bg-[#e9e9e9] top-0 left-0 shadow-xl z-20 px-10 py-2">
+      <div className="w-full flex justify-between items-center  fixed bg-[#e9e9e9] top-0 left-0 shadow-xl z-20 px-2 md:px-10 py-2">
         <div className="w-[65px] h-[65px] rounded-bl-full bg-primaryColor right-[-1rem] top-0 fixed md:hidden z-10"></div>
         {/* logo  */}
 
@@ -43,22 +43,19 @@ function Navbar() {
           </button>
           <ul className="flex justify-center items-center gap-4 flex-col w-full mb-8 font-bold text-lg text-gray-600 md:flex-row md:mb-0">
             <Link to="/" className="hover:text-primaryColor cursor-pointer">
-              home
+              Home
             </Link>
             <Link
-              to="/events"
+              to="/Events"
               className="hover:text-primaryColor cursor-pointer"
             >
               Events
             </Link>
-            <Link to="/blog" className="hover:text-primaryColor cursor-pointer">
+            <Link to="/Blogs" className="hover:text-primaryColor cursor-pointer">
               Blog
             </Link>
-            <Link className="hover:text-primaryColor cursor-pointer">
-              Projects
-            </Link>
             <Link
-              to="/contact"
+              to="/Contact"
               className="hover:text-primaryColor cursor-pointer"
             >
               Contact Us
@@ -80,7 +77,6 @@ function Navbar() {
           }}
         />
       </div>
-      <div className=" pb-16"></div>
     </>
   );
 }
