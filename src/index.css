@@ -19,9 +19,9 @@ body {
   margin: auto;
   animation: HomeLoading_spin 1s linear infinite;
 }
-.active li{
+/* .active li{
    @apply bg-gradient-to-r from-blue-500 to-blue-400 mb-3  text-white font-semibold ;
-}
+} */
 @keyframes HomeLoading_spin {
   0% {
     transform: rotate(0deg);

@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "../PublicComponents/Navbar";
-import Footer from "../PublicComponents/Footer";
 import EventsElement from "../EventsComponents/EventsElement";
 import OurArticle from "../OurArticles/OurArticle";
 import Header from "../PublicComponents/Header";
