@@ -6,12 +6,14 @@ export default {
       colors: {
         bodyBg: "#E9E9E9",
         PostsBg: "#e1e1e1",
+        blue: "#3067B1",
+        white: "#ffffff",
         primaryColor: "#025EBF",
         secondaryColor: "#D1D1D1",
         titleColor: "rgb(30 103 189)",
       },
       screens:{
-        'lo':'350px',
+        'lo':'330px',
         },
       fontFamily: {
         ubuntu: ["Ubuntu", "sans-serif"],

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Navbar from "../PublicComponents/Navbar";
-import Footer from "../PublicComponents/Footer";
 import EventsElement from "../EventsComponents/EventsElement";
 import OurArticle from "../OurArticles/OurArticle";
+import Header from "../PublicComponents/Header";
 export default function Events() {
   return (
     <div className=" bg-white">
+      <Header/>
       <div className=" flex justify-around items-start mt-5">
         <div className=" max-xl:hidden border-r-2  border-solid border-purple-300 h-fit">
           <OurArticle />
