@@ -20,7 +20,7 @@ function Message({user,message,readed}) {
     }} >
       {/* readed state */}
               {!readed && cencelReaded && <span className='absolute left-0 top-0 bg-[#0040ff29] rounded-lg w-full h-full'>
-                <span className='absolute left-[5px] top-[2px] bg-blue-700 w-[8px] h-[8px] rounded-full'></span>
+                <span className='absolute left-[5px] top-[2px] bg-primaryColor w-[8px] h-[8px] rounded-full'></span>
                 </span>  }
               <div>
                 <h3 className="text-[12px] font-bold ">{user}</h3>
