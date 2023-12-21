@@ -11,9 +11,9 @@ function Users() {
       <div className='flex flex-col md:flex-row md:justify-between items-center w-full gap-5'>
 
 
-        <Card icon={<FaUsers size={50}/>}  color='bg-gradient-to-r from-blue-500 to-pink-500' title='Users' nbr="435k"/>        
+        <Card icon={<FaUsers size={50}/>}  color='bg-gradient-to-r from-red-500 to-[#0058ff]' title='Users' nbr="435k"/>        
 
-        <Card icon={<RiAdminFill size={50}/>}  color='bg-gradient-to-r from-blue-600 to-blue-300' title='Users Dirction' nbr="30"/> 
+        <Card icon={<RiAdminFill size={50}/>}  color='bg-gradient-to-r from-[#0058ff] to-[#3195ff]' title='Users Dirction' nbr="30"/> 
 
         <Card icon={<BiBuildings size={50}/>}  color='bg-gradient-to-r from-red-500 to-pink-500' title='Sections' nbr="7"/> 
 

@@ -71,8 +71,8 @@ function Dashboard() {
       <div className={styles}>
         {/* <Users /> */}
         {/* <Events/> */}
-        <Blog/>
-        {/* <Messages/> */}
+        {/* <Blog/> */}
+        <Messages/>
       </div>
       <Aside/>
     </div>

@@ -13,7 +13,7 @@ function Events() {
     <div className='mt-5 w-full relative'>
      {/* intro  */}
      <div className='flex flex-col md:flex-row md:justify-between items-center w-full gap-5'>
-<Card icon={<BiCalendarEvent size={50}/>}  color='bg-gradient-to-r from-blue-500 to-pink-500' title='Events' nbr="25"/>        
+<Card icon={<BiCalendarEvent size={50}/>}  color='bg-gradient-to-r from-[#0058ff] to-[#3195ff]' title='Events' nbr="25"/>        
 </div>
      {/* add event  */}
      <div className='w-full mt-12 rounded-md relative'>

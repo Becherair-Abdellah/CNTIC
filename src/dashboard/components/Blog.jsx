@@ -13,7 +13,7 @@ function Blog() {
     <div className='mt-5 w-full relative'>
      {/* intro  */}
      <div className='flex flex-col md:flex-row md:justify-between items-center w-full gap-5'>
-<Card icon={<RiArticleLine size={50}/>}  color='bg-gradient-to-r from-blue-500 to-pink-500' title='Articles' nbr="12"/>        
+<Card icon={<RiArticleLine size={50}/>}  color='bg-gradient-to-r from-red-500 to-[#0058ff]' title='Articles' nbr="12"/>        
 </div>
      {/* add Article  */}
      <div className='w-full mt-12 rounded-md relative'>

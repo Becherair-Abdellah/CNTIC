@@ -10,10 +10,11 @@ function Messages() {
       <div className="flex flex-col md:flex-row md:justify-between items-center w-full gap-5">
         <Card
           icon={<BiMessageAltDetail size={50} />}
-          color="bg-gradient-to-r from-blue-500 to-pink-500"
+          color="bg-gradient-to-r from-red-500 to-[#0058ff]"
           title="Messages"
           nbr="25"
         />
+
       </div>
 
       {/* add event  */}
