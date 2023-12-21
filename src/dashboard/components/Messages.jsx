@@ -29,9 +29,9 @@ function Messages() {
         <div className='overlay hidden w-full md:w-full h-full absolute left-0 top-0 bg-transparent  z-[111111]'></div>
 
           <ul>
-            <Message user="Abdellah Becherair" message="سلاسلام عليكم راني سجلت من قبل بصح كي نبقي ندخل يقولي خطأ ارجوا منكم اخد رسالتي بعين الإعتبار وشكر" readed={false} />
+            <Message user="Abdellah Becherair" message="سلاسلام عليكم راني سجلت من قبل بصح كي نبقي ندخل  يقولي خطأ ارجوا منكم اخد رسالتي بعين الإعتبار وشكر" readed={false} />
 
-            <Message user="Abdellah Becherair" message="سلاسلام عليكم راني سجلت من قبل بصح كي نبقي ندخل يقولي خطأ ارجوا منكم اخد رسالتي بعين الإعتبار وشكر" readed={false} />
+            <Message user="Abdellah Becherair" message="hello world Iam hWQW KFJK SCJIEWHC CDIJCWHC CHEWSLALKJDAKHE DCUHUEWL;S IS;WOIE SOSW PBAOkajs sos aadadhwhn slslkjda left dsksjshw sdhshdsjkshdkjshjss shdsuhsa asdhshdsa ehefewkf;kelejefewfewhewn" readed={false} />
 
             <Message user="Abdellah Becherair" message="سلاسلام عليكم راني سجلت من قبل بصح كي نبقي ندخل يقولي خطأ ارجوا منكم اخد رسالتي بعين الإعتبار وشكر" readed={true} />
 
