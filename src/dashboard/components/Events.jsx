@@ -50,8 +50,11 @@ function Events() {
                   Ref.current.click();
                 }}><BiSolidCloudUpload size={30}/></div>
                </div>
-               <div ref={refImg} className='grid grid-cols-1 md:grid-cols-3  gap-3 border-blue-700' >
+               <div ref={refImg} className='grid grid-cols-1 md:grid-cols-3  gap-3 border-gray-300 border-b-[2px] my-3 ' >
                </div>
+               <button className='text-white font-bold bg-primaryColor text-center rounded-sm p-2 gap-2 relative left-[100%] -translate-x-[100%]'>
+               <BiPaperPlane size={23}/>
+               </button>
             </form>
         </div>
      </div>
