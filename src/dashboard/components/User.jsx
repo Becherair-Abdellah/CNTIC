@@ -6,7 +6,7 @@ function User({name,nbrcard,ID,state,section}) {
   const [rmUser,setrm] = useState(false);
   useEffect(()=>{
     rmUser?Ref.current.remove():'';
-  })
+  });
   return (
     <>
             {poPub&& <RemoveUser setPopub={setPopub} setrm={setrm}/>}

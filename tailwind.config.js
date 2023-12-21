@@ -22,7 +22,7 @@ export default {
         custom: "35% auto",
         customMd: "25% auto",
         customXl: "40% auto",
-        manyCustom : "20% 20% 20% 15% 20% 5%"
+        manyCustom : "20% 20% 20% 15% 20% 5%",
       },
       width:{
         cuWidth : 'calc(100% - 70px)',
