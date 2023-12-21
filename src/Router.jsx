@@ -11,6 +11,7 @@ import Signup from "./dashboard/Signup";
 import ResetPassword from "./dashboard/ResetPassword";
 import Article from "./components/pages/Article";
 import Blogs from "./components/pages/Blogs"
+import Users from "./dashboard/components/Users";
 const routes = createBrowserRouter([
     {
         path: "/",

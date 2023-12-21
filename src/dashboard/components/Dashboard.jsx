@@ -69,10 +69,10 @@ function Dashboard() {
       </header>
 
       <div className={styles}>
-        {/* <Users /> */}
+        <Users />
         {/* <Events/> */}
         {/* <Blog/> */}
-        <Messages/>
+        {/* <Messages/> */}
       </div>
       <Aside/>
     </div>
