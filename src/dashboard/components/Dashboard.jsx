@@ -18,6 +18,7 @@ import Users from './Users'
 import Events from './Events'
 import Blog from './Blog'
 import Messages from './Messages'
+import Overview from './Overview'
 function Dashboard() {
   // const showAside = useSelector(({show_and_hide_aside:{aside}})=>aside);
   const styles = `main_page relative py-[24px] md:ml-[70px] top-[38px] animated-bg_test text-white flex justify-between p-[1rem]`;
@@ -69,7 +70,9 @@ function Dashboard() {
       </header>
 
       <div className={styles}>
-        <Users />
+        <Outlet/>
+        {/* <Overview/> */}
+        {/* <Users /> */}
         {/* <Events/> */}
         {/* <Blog/> */}
         {/* <Messages/> */}

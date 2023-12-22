@@ -18,10 +18,10 @@ function LinksUser() {
       <NavLink to="/dashboard">
       <li className='flex items-center gap-3 p-3 px-2 text-[17px] hover:bg-gray-100  cursor-pointer rounded-md text-gray-600' ><LuLayoutDashboard size={21}/> <span className={spanStyle}>Dashboard</span></li>
       </NavLink>
-      <NavLink to="/dashboard"><li className='flex items-center gap-3 p-3 px-2 text-[15px] hover:bg-gray-100  cursor-pointer  mb-3 rounded-md text-gray-600' ><FiUsers size={21}/> <span className={spanStyle}>Users</span></li></NavLink>
-      <NavLink to="/dashboards"><li className='flex items-center gap-3 p-3 px-2 text-[15px] hover:bg-gray-100 cursor-pointer  mb-3 rounded-md text-gray-600' ><BsCalendar2Event   size={21}/><span className={spanStyle}>Events</span></li></NavLink>
-      <NavLink to="/dashboarda"><li className='flex items-center gap-3 p-3 px-2 text-[15px] hover:bg-gray-100  cursor-pointer  mb-3 rounded-md text-gray-600' ><RiArticleLine   size={21} /><span className={spanStyle}>Articles</span></li></NavLink>
-      <NavLink to="/dashboardq"><li className='flex items-center gap-3 p-3 px-2 text-[15px] hover:bg-gray-100  cursor-pointer  mb-3 rounded-md text-gray-600' ><BiMessageSquareDots size={21}/><span className={spanStyle}>Messages</span></li></NavLink>
+      <NavLink to="users"><li className='flex items-center gap-3 p-3 px-2 text-[15px] hover:bg-gray-100  cursor-pointer  mb-3 rounded-md text-gray-600' ><FiUsers size={21}/> <span className={spanStyle}>Users</span></li></NavLink>
+      <NavLink to="events"><li className='flex items-center gap-3 p-3 px-2 text-[15px] hover:bg-gray-100 cursor-pointer  mb-3 rounded-md text-gray-600' ><BsCalendar2Event   size={21}/><span className={spanStyle}>Events</span></li></NavLink>
+      <NavLink to="blogs"><li className='flex items-center gap-3 p-3 px-2 text-[15px] hover:bg-gray-100  cursor-pointer  mb-3 rounded-md text-gray-600' ><RiArticleLine   size={21} /><span className={spanStyle}>Articles</span></li></NavLink>
+      <NavLink to="messages"><li className='flex items-center gap-3 p-3 px-2 text-[15px] hover:bg-gray-100  cursor-pointer  mb-3 rounded-md text-gray-600' ><BiMessageSquareDots size={21}/><span className={spanStyle}>Messages</span></li></NavLink>
     </motion.ul>
   )
 }
