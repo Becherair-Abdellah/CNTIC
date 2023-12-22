@@ -1,0 +1,59 @@
+.UserPhoto::after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 15%;
+    height: 30%;
+    background-color: transparent;
+    border-left: 5px solid #3067B1;
+    border-top: 5px solid #3067B1;
+    padding: 15px;
+}
+
+.UserPhoto::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 59%;
+    height: 105%;
+    border-top: 5px solid #3067B1;
+    border-right: 5px solid #3067B1;
+    border-bottom: 5px solid #3067B1;
+}
+
+.group3::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 59%;
+    height: 105%;
+    border-top: 5px solid #3067B1;
+    border-right: 5px solid #3067B1;
+    border-bottom: 5px solid #3067B1;
+}
+
+.UserForm::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 25%;
+    height: 105%;
+    border-top: 5px solid #3067B1;
+    border-right: 5px solid #3067B1;
+    border-bottom: 5px solid #3067B1;
+}
+
+.UserForm::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 40%;
+    height: 65%;
+    border-top: 5px solid #3067B1;
+    border-left: 5px solid #3067B1;
+}
