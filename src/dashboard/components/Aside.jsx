@@ -7,7 +7,7 @@ function Aside() {
   const aside = useRef('');
   const dispatch = useDispatch()
   const showAside = useSelector(({show_and_hide_aside:{aside}})=>aside);
-  const styles = `animated-bg px-4 fixed h-[100vh] md:left-0 ${showAside?`left-0 md:w-[300px] `:`left-[-100%] md:w-[70px]`} w-[300px] z-[11] top-0 duration-200 bg-white shadow-lg shadow-gray-400 md:shadow-none md:border-r-[1.5px] border-gray-200  flex flex-col justify-between`;
+  const styles = `animated-bg px-4 fixed h-[100vh] md:left-0 ${showAside?`left-0 md:w-[300px] `:`left-[-100%] md:w-[70px]`} w-[300px] z-[111] top-0 duration-200 bg-white shadow-lg shadow-gray-400 md:shadow-none md:border-r-[1.5px] border-gray-200  flex flex-col justify-between`;
   const h1Style = `text-xl duration-500   font-bold text-primaryColor ${showAside?"":"md:hidden"}`;
 
   useEffect(()=>{

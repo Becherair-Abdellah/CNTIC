@@ -7,7 +7,10 @@ import {LuLayoutDashboard } from "react-icons/lu"
 import { useSelector } from 'react-redux';
 import { motion } from 'framer-motion'
 import { NavLink } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { hide } from '../redux/Reducers';
 function LinksUser() {
+  const dispatch = useDispatch();
   const showAside = useSelector(({show_and_hide_aside:{aside}})=>aside);
   const spanStyle = `${!showAside?"md:hidden":""}`
   return (
@@ -18,10 +21,18 @@ function LinksUser() {
       <NavLink to="/dashboard">
       <li className='flex items-center gap-3 p-3 px-2 text-[17px] hover:bg-gray-100  cursor-pointer rounded-md text-gray-600' ><LuLayoutDashboard size={21}/> <span className={spanStyle}>Dashboard</span></li>
       </NavLink>
-      <NavLink to="users"><li className='flex items-center gap-3 p-3 px-2 text-[15px] hover:bg-gray-100  cursor-pointer  mb-3 rounded-md text-gray-600' ><FiUsers size={21}/> <span className={spanStyle}>Users</span></li></NavLink>
-      <NavLink to="events"><li className='flex items-center gap-3 p-3 px-2 text-[15px] hover:bg-gray-100 cursor-pointer  mb-3 rounded-md text-gray-600' ><BsCalendar2Event   size={21}/><span className={spanStyle}>Events</span></li></NavLink>
-      <NavLink to="blogs"><li className='flex items-center gap-3 p-3 px-2 text-[15px] hover:bg-gray-100  cursor-pointer  mb-3 rounded-md text-gray-600' ><RiArticleLine   size={21} /><span className={spanStyle}>Articles</span></li></NavLink>
-      <NavLink to="messages"><li className='flex items-center gap-3 p-3 px-2 text-[15px] hover:bg-gray-100  cursor-pointer  mb-3 rounded-md text-gray-600' ><BiMessageSquareDots size={21}/><span className={spanStyle}>Messages</span></li></NavLink>
+      <NavLink to="users" onClick={()=>{
+        dispatch(hide())
+      }}><li className='flex items-center gap-3 p-3 px-2 text-[15px] hover:bg-gray-100  cursor-pointer  mb-3 rounded-md text-gray-600' ><FiUsers size={21}/> <span className={spanStyle}>Users</span></li></NavLink>
+      <NavLink to="events" onClick={()=>{
+        dispatch(hide())
+      }}><li className='flex items-center gap-3 p-3 px-2 text-[15px] hover:bg-gray-100 cursor-pointer  mb-3 rounded-md text-gray-600' ><BsCalendar2Event   size={21}/><span className={spanStyle}>Events</span></li></NavLink>
+      <NavLink to="blogs" onClick={()=>{
+        dispatch(hide())
+      }}><li className='flex items-center gap-3 p-3 px-2 text-[15px] hover:bg-gray-100  cursor-pointer  mb-3 rounded-md text-gray-600' ><RiArticleLine   size={21} /><span className={spanStyle}>Articles</span></li></NavLink>
+      <NavLink to="messages" onClick={()=>{
+        dispatch(hide())
+      }}><li className='flex items-center gap-3 p-3 px-2 text-[15px] hover:bg-gray-100  cursor-pointer  mb-3 rounded-md text-gray-600' ><BiMessageSquareDots size={21}/><span className={spanStyle}>Messages</span></li></NavLink>
     </motion.ul>
   )
 }
