@@ -19,11 +19,11 @@ function OurArticle() {
     return () => window.removeEventListener("scroll", () => {});
   }, []);
   return (
-    <Link to="/blog/articles">
+    <Link to="/Blogs/Article">
       <div
-        className={` parkpark fixed ${
-          scrolledToEnd ? "h-[70vh]" : "h-screen"
-        } overflow-scroll  px-2 pb-20`}
+        className={` parkpark    flex justify-start items-center flex-col  ${
+          scrolledToEnd ? "h-[90vh]" : "h-screen"
+        } overflow-scroll  px-2 pb-20 `}
       >
         {" "}
         <div className="w-[100%]  pt-5 text-center text-primaryColor text-[29px] font-bold font-['Ubuntu'] leading-[10px]">

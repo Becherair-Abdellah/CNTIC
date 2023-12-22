@@ -5,12 +5,12 @@ import Header from "../PublicComponents/Header";
 export default function Events() {
   return (
     <div className=" bg-white">
-      <Header/>
+      <Header />
       <div className=" flex justify-around items-start mt-5">
-        <div className=" max-xl:hidden border-r-2  border-solid border-purple-300 h-fit">
+        <div className=" sticky top-0  max-xl:hidden border-r-2 w-[40%]  h-fit">
           <OurArticle />
         </div>
-        <div className="w-[70%]">
+        <div className="md:w-[65%] w-[90%] m-auto flex flex-col justify-center items-center ">
           <EventsElement />
           <EventsElement />
           <EventsElement />

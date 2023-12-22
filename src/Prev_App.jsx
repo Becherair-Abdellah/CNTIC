@@ -15,20 +15,17 @@ import Email from "./dashboard/Email";
 import Signup from "./dashboard/Signup";
 import ResetPassword from "./dashboard/ResetPassword";
 // use redux toolkit for state managment
-import  store  from "./dashboard/redux/store";
+import store from "./dashboard/redux/store";
 import { Provider } from "react-redux";
-import Articals from "./components/pages/Articals";
-import Blogs from "./components/pages/Blogs"
+import Article from "./components/pages/Article";
+import Blogs from "./components/pages/Blogs";
 function App() {
   return (
     <Provider store={store}>
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/dashboard" element={<Dashboard />}>
-            
-            
-          </Route>
+          <Route exact path="/dashboard" element={<Dashboard />}></Route>
           <Route exact path="/dashboard/signin" element={<Signin />} />
           <Route exact path="/dashboard/Email" element={<Email />} />
           <Route
@@ -39,7 +36,7 @@ function App() {
           <Route exact path="/Events" element={<Events />} />
           <Route exact path="/Contact" element={<ContactUs />} />
           <Route exact path="/Blogs" element={<Blogs />} />
-          <Route exact path="/Blogs/Article" element={<Articals />} />
+          <Route exact path="/Blogs/Article" element={<Article />} />
         </Routes>
       </Router>
     </Provider>

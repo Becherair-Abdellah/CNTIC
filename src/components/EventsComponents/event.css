@@ -1,0 +1,11 @@
+.comments-section {
+  opacity: 0;
+
+  transition: all 1s;
+}
+
+.comments-section-visible {
+  opacity: 1;
+  height: fit-content;
+  /* Set an appropriate value based on your design */
+}
