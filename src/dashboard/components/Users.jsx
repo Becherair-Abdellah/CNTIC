@@ -23,7 +23,7 @@ function Users() {
       <div className='users mt-7 overflow-hidden overflow-x-visible relative'>
         <div className='overlay hidden w-[850px] md:w-full h-full absolute left-0 top-0 bg-transparent  z-[1]'></div>
         <ul className='text-gray-500 w-[850px] md:w-full'>
-            <li className=' grid grid-cols-manyCustom  p-2 text-white rounded-md mb-2 bg-gradient-to-r from-blue-700 to-blue-500    font-semibold'>
+            <li className=' grid grid-cols-manyCustom  p-2 text-white rounded-md mb-2 bg-gradient-to-r from-red-500 to-[#0058ff]     font-semibold'>
                 <span>User</span>
                 <span>Number Card</span>
                 <span>ID</span>
