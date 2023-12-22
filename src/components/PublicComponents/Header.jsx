@@ -103,7 +103,7 @@ function Header() {
                         </defs>
                     </svg>
                 </div>
-                <div className="textSvg lo:my-40 lg:my-28 xl:my-16  ">
+                <div className="textSvg lo:my-40 lg:my-28 xl:my-20  ">
                     <h3 className="text-blue text-center  lo:text-4xl md:text-5xl lg:text-5xl xl:text-5xl xl:px-8 xl:py-12">
                         Experience the Future{" "}
                         <span className="block lo:mt-5 lo:text-2xl md:text-4xl lg:text-5xl lg:mt-7 xl:hidden">
