@@ -7,7 +7,7 @@ export default function App() {
     <div>
       <Navbar />
 
-      <div className=' min-h-[calc(100vh-85px)] pt-[64px]'>
+      <div className=' min-h-[calc(100vh-85px)]'>
         <Outlet />
       </div>
       <Footer/>

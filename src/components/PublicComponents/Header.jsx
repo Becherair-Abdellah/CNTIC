@@ -1,7 +1,7 @@
 import React from "react";
 // import "../../App.css";
 
-function Header() {
+function Header({ title , text}) {
     // console.log(window.location.pathname);
     let path = window.location.pathname;
 
@@ -103,15 +103,17 @@ function Header() {
                         </defs>
                     </svg>
                 </div>
-                <div className="textSvg lo:my-40 lg:my-28 xl:my-20  ">
-                    <h3 className="text-blue text-center  lo:text-4xl md:text-5xl lg:text-5xl xl:text-5xl xl:px-8 xl:py-12">
-                        Experience the Future{" "}
-                        <span className="block lo:mt-5 lo:text-2xl md:text-4xl lg:text-5xl lg:mt-7 xl:hidden">
-                            CNTIC Club's Event Series
+                <div className="textSvg lo:my-20 lg:my-10 xl:my-10  ">
+                    <h3 className="text-blue text-center  lo:text-3xl md:text-5xl lg:text-5xl xl:text-5xl xl:px-8 xl:py-6">
+                        <span className="font-semibold ">
+                            {title}
+                        </span>
+                        <span className="block lo:mt-5 lo:text-2xl font-semibold  md:text-4xl lg:text-5xl lg:mt-7 xl:hidden">
+                            {text}
                         </span>
                     </h3>
-                    <p className="text-blue hidden xl:block text-center text-5xl">
-                        CNTIC Club's Event Series
+                    <p className="text-blue hidden font-semibold  xl:block text-center text-5xl">
+                        {text}
                     </p>
                 </div>
 
