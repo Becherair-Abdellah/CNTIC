@@ -16,6 +16,7 @@ import Eve from "./dashboard/components/Events";
 import Overview from "./dashboard/components/Overview";
 import Messages from "./dashboard/components/Messages";
 import Blog from "./dashboard/components/Blog";
+import Login from "./components/pages/Login";
 const routes = createBrowserRouter([
     {
         path: "/",
@@ -26,6 +27,7 @@ const routes = createBrowserRouter([
             { path: "/Contact", element: <ContactUs /> },
             { path: "/Blogs", element: <Blogs /> },
             { path: "/Articles/:id", element: <Article /> },
+            { path: "/Login", element: <Login /> },
         ],
     },
     {
@@ -33,11 +35,10 @@ const routes = createBrowserRouter([
         element: <Dashboard />,
         children: [
             { index: true, element: <Overview /> },
-            { path: "users", element: <Users/> },
-            { path: "events", element: <Eve/>},
-            { path: "messages", element: <Messages/> },
-            { path: "blogs", element: <Blog/> },
-
+            { path: "users", element: <Users /> },
+            { path: "events", element: <Eve /> },
+            { path: "messages", element: <Messages /> },
+            { path: "blogs", element: <Blog /> },
         ],
     },
     { path: "/Dashboard/Signin", element: <Signin /> },

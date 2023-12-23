@@ -6,7 +6,7 @@ function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <section className="bg-primaryColor">
+        <section className="bg-primaryColor z-10 relative">
             <div className="max-w-screen-xl px-4 mx-auto space-y-4 overflow-hidden sm:px-6 lg:px-8">
                 <div className="flex justify-center mx-auto mt-5 space-x-6 ">
                     <a href="#" className="text-gray-400 ">
