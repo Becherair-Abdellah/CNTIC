@@ -8,7 +8,7 @@ import News from "../homeComponenets/News";
 import React from "react";
 function Home() {
     return (
-        <div className="bg-bodyBg">
+        <div className="bg-bodyBg pt-[64px]">
             <div className="w-[90%] mx-auto ">
                 <Navbar />
                 <Hero />

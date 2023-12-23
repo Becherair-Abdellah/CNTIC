@@ -62,10 +62,10 @@ function Navbar() {
             </Link>
           </ul>
           {/* buttons and profile */}
-          <div className="flex items-center gap-6 flex-col w-full md:flex-row md:w-fit">
+          <Link to="/Login" className="flex items-center gap-6 flex-col w-full md:flex-row md:w-fit">
             <BtnLogin content="Login" />
             {/* <BtnLogin content="SignUp" /> */}
-          </div>
+          </Link>
         </div>
         <VscThreeBars
           size={30}

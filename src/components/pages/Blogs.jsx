@@ -8,7 +8,7 @@ import Header from '../PublicComponents/Header'
 function Blogs() {
   const [selected,setSelected] = useState(1);
   return (
-      <>
+      <div className=" pt-[64px]">
           <Header title="CNTIC Blogs" text="Gain Brain Power with us" />
           <div className="p-2 py-10 md:p-5 relative">
               <div></div>
@@ -87,7 +87,7 @@ function Blogs() {
                   />
               </div>
           </div>
-      </>
+      </div>
   );
 }
 

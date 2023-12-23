@@ -5,7 +5,7 @@ function Signin() {
     return (
         <div className=" ">
             <div className="parent  flex justify-center  items-center">
-                <div className="md:w-full">
+                <div className="md:w-full min-h-[60vh] md:min-h-fit">
                     <div
                         href="#"
                         className="hidden items-center mb-6 text-2xl font-semibold md:flex text-gray-900  flex-col"
@@ -16,7 +16,7 @@ function Signin() {
                             alt="logo"
                         />
                         <h1 className="text-3xl relative text-white bg-primaryColor">
-                            CNTIC DASHBOARD
+                            CNTIC Login
                             <span className="w-[40px] h-[3px] absolute top-[-.43rem] right-[-.43rem]  bg-primaryColor"></span>
                             <span className="w-[3px] h-[30px] absolute top-[-.43rem] right-[-.43rem] bg-primaryColor"></span>
                             <span className="w-[40px] h-[3px] absolute bottom-[-.43rem] left-[-.43rem] bg-primaryColor"></span>
@@ -33,7 +33,7 @@ function Signin() {
                                 <span className="w-[40px] h-[4px] absolute bottom-[-.43rem] left-[-.43rem] bg-primaryColor"></span>
                                 <span className="w-[4px] h-[30px] absolute bottom-[-.43rem] left-[-.43rem] bg-primaryColor"></span>
                                 <h1 className=" font-bold leading-tight tracking-tight text-gray-900 text-3xl ">
-                                    Hi Admin welecom back! 👋
+                                    Hi! welecom back! 👋
                                 </h1>
                                 <form
                                     className="space-y-4 md:space-y-6"
@@ -92,7 +92,7 @@ function Signin() {
                                             </div>
                                         </div>
                                         <Link
-                                            to="/dashboard/email"
+                                            to="/ResetPassword"
                                             className="text-sm font-medium text-primary-600 hover:underline text-blue-500"
                                         >
                                             Forgot password?
@@ -111,7 +111,7 @@ function Signin() {
                 </section>
             </div>
             <div className="w-[120px] h-[120px] rounded-br-full bg-primaryColor left-0 top-[50px] absolute "></div>
-            <div className="w-[150px] h-[150px] rounded-tl-full bg-primaryColor right-0  bottom-0 md:bottom-[-100px] absolute z-0 "></div>
+            <div className="w-[150px] h-[150px] rounded-tl-full bg-primaryColor right-0  bottom-0 md:bottom-[-65px] absolute z-0 "></div>
         </div>
     );
 }

@@ -1,11 +1,7 @@
 import React from 'react'
 
 function ContactUs() {
-  return (
-    <div>
-      Contact Us
-    </div>
-  )
+  return <div className=" pt-[64px]">Contact Us</div>;
 }
 
 export default ContactUs

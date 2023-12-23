@@ -4,7 +4,7 @@ import OurArticle from "../OurArticles/OurArticle";
 import Header from "../PublicComponents/Header";
 export default function Events() {
   return (
-      <div className=" bg-white">
+      <div className=" bg-white  pt-[64px]">
           <Header
               title="Experience the Future"
               text="CNTIC Club's Event Series"
