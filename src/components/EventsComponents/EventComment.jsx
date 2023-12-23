@@ -30,22 +30,22 @@ export default function EventComment({ text }) {
     setShowMore(!showMore);
   };
   return (
-    <div className=" h-fit   ">
-      <div className="w-[100%] m-auto  p-2 h-fit">
-        <div className=" md:flex items-start relative">
+    <div className=" h-fit    ">
+      <div className="w-[100%] m-auto   p-2 h-fit">
+        <div className="  md:flex items-start relative">
           <span className="w-[3px] h-[100%] absolute left-0 bg-primaryColor"></span>
           <img src="../../../src/assets/avatar.png" alt="" className="w-14 " />
 
-          <div className=" flex bg-PostsBg rounded-md p-2 font-bold ml-2 md:ml-0">
+          <div className=" overscroll-contain w-[100%] flex justify-between bg-PostsBg rounded-md p-2 font-bold ml-2 md:ml-0">
             <div>
               {showMore ? (
-                <span
-                  className="inline text-[14px] md:text-[16px]"
+                <p
+                  className=" overscroll-contain  text-[14px]  md:text-[16px]"
                   dangerouslySetInnerHTML={{ __html: text }}
                 />
               ) : (
-                <span
-                  className="inline text-[14px] md:text-[16px]"
+                <p
+                  className="    text-[14px] md:text-[16px]"
                   dangerouslySetInnerHTML={{
                     __html: text.slice(0, 50),
                   }}
