@@ -5,7 +5,7 @@ function Signin() {
     return (
         <div className=" ">
             <div className="parent  flex justify-center  items-center">
-                <div className="md:w-full min-h-[60vh] md:min-h-fit">
+                <div className="md:w-full min-h-[90vh] md:min-h-fit">
                     <div
                         href="#"
                         className="hidden items-center mb-6 text-2xl font-semibold md:flex text-gray-900  flex-col"
@@ -110,8 +110,8 @@ function Signin() {
                     </div>
                 </section>
             </div>
-            <div className="w-[120px] h-[120px] rounded-br-full bg-primaryColor left-0 top-[50px] absolute "></div>
-            <div className="w-[150px] h-[150px] rounded-tl-full bg-primaryColor right-0  bottom-0 md:bottom-[-65px] absolute z-0 "></div>
+            <div className="w-[120px] h-[120px] rounded-br-full bg-primaryColor left-0 top-[60px] absolute "></div>
+            <div className="w-[150px] h-[150px] rounded-tl-full bg-primaryColor right-0  bottom-0 md:bottom-[-2px] absolute z-0 "></div>
         </div>
     );
 }

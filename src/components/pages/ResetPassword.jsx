@@ -2,8 +2,8 @@ import React from "react";
 import Logo from "../../assets/resetpassword.svg";
 function ResetPassword() {
     return (
-        <>
-            <div className="parent flex justify-evenly items-center">
+        <div className=" min-h-screen flex items-center justify-center ">
+            <div className="  parent flex justify-evenly items-center">
                 <div>
                     <div
                         href="#"
@@ -23,7 +23,7 @@ function ResetPassword() {
                         </h1>
                     </div>
                 </div>
-                <section className="w-[100%] md:w-[50%] z-[11] -translate-x-[50%] -translate-y-[50%] absolute top-[50%] left-[50%] md:relative md:left-0 md:top-0 md:translate-x-0 md:translate-y-0">
+                <section className="mt-8 w-[100%] md:w-[50%] z-[11] -translate-x-[50%] -translate-y-[50%] absolute top-[50%] left-[50%] md:relative md:left-0 md:top-0 md:translate-x-0 md:translate-y-0">
                     <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
                         <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0  ">
                             <div className="p-6 space-y-4 md:space-y-6 sm:p-8 relative">
@@ -85,9 +85,9 @@ function ResetPassword() {
                     </div>
                 </section>
             </div>
-            <div className="w-[120px] h-[120px] rounded-br-full bg-primaryColor left-0 top-0 absolute "></div>
-            <div className="w-[150px] h-[150px] rounded-tl-full bg-primaryColor right-0 bottom-0 absolute "></div>
-        </>
+            <div className="w-[120px] h-[120px] rounded-br-full bg-primaryColor left-0 top-[60px] absolute "></div>
+            <div className="w-[150px] h-[150px] rounded-tl-full bg-primaryColor right-0  bottom-0 md:bottom-[-2px] absolute z-0 "></div>
+        </div>
     );
 }
 
