@@ -1,5 +1,7 @@
 import React from 'react'
 import ContactMember from './ContactMember'
+import ContactNewUser from './ContactNewUser'
+
 function ContactUs() {
 
   
@@ -12,8 +14,8 @@ function ContactUs() {
 
 </div>
 
-<ContactMember />
-
+{/* <ContactMember /> */}
+<ContactNewUser />
 
 
 
