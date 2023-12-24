@@ -13,7 +13,7 @@ export default {
         titleColor: "rgb(30 103 189)",
       },
       screens:{
-        'lo':'330px',
+        'lo':'320px',
         },
       fontFamily: {
         ubuntu: ["Ubuntu", "sans-serif"],

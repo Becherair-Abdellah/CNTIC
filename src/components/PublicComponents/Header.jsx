@@ -103,7 +103,7 @@ function Header({ title , text}) {
                         </defs>
                     </svg>
                 </div>
-                <div className="textSvg lo:my-20 lg:my-10 xl:my-10  ">
+                <div className="textSvg lo:my-24 lg:my-20 xl:my-24  ">
                     <h3 className="text-blue text-center  lo:text-3xl md:text-5xl lg:text-5xl xl:text-5xl xl:px-8 xl:py-6">
                         <span className="font-semibold ">
                             {title}
