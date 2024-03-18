@@ -1,9 +1,56 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Logo from "../../../public/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import * as yup from 'yup'
+import { yupResolver } from '@hookform/resolvers/yup'
+import axios from "axios";
+import { useDispatch, useSelector } from "react-redux";
+import { login } from "../../dashboard/redux/Reducers";
+import { useCookies } from "react-cookie";
 function Signin() {
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+    const [_, setCookies] = useCookies()
+    const schema = yup.object().shape({
+        username: yup.string().email().required('username is required'),
+        password: yup.string().min(6).required('Password is required'),
+    });
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useForm({
+        resolver: yupResolver(schema),
+    });
+    const onSubmit = async (data) => {
+        try {
+            const url = 'https://backend.cntic-club.com/api/token/';
+            const body = {
+                username: data.username,
+                password: data.password
+            };
+            const response = await axios.post(url, body);
+
+            // Check if response status is OK (2xx)
+            if (response.status >= 200 && response.status < 300) {
+                const responseData = response.data;
+                setCookies("access_token", responseData.access);
+                dispatch(login());
+                if (responseData.user.group === "admin") {
+                    navigate('/dashboard')
+                } else {
+                    navigate('/')
+                }
+            } else {
+                console.error('Failed to get tokens. Status:', response.status);
+            }
+        } catch (error) {
+            console.error('Error:', error.message);
+        }
+    };
     return (
-        <div className=" ">
+        <div className="">
             <div className="parent  flex justify-center  items-center">
                 <div className="md:w-full min-h-[90vh] md:min-h-fit">
                     <div
@@ -38,22 +85,23 @@ function Signin() {
                                 <form
                                     className="space-y-4 md:space-y-6"
                                     action="#"
+                                    onSubmit={handleSubmit(onSubmit)}
                                 >
                                     <div>
                                         <label
-                                            htmlFor="email"
+                                            htmlFor="username"
                                             className="block mb-2 text-sm font-medium text-gray-600 "
                                         >
-                                            email
+                                            username
                                         </label>
                                         <input
-                                            type="email"
-                                            name="email"
-                                            id="email"
-                                            className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5   dark:placeholder-gray-400   dark:focus:border-blue-500"
-                                            placeholder="name@company.com"
-                                            required=""
+                                            type="text"
+                                            name="username"
+                                            id="username"
+                                            className={`bg-gray-50 border ${errors.username ? 'border-red-500' : 'border-gray-300'} text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:placeholder-gray-400 dark:focus:border-blue-500`} placeholder="name@company.com"
+                                            {...register("username", { required: true })}
                                         />
+                                        <p className="text-red-500">{errors.username?.message}</p>
                                     </div>
                                     <div>
                                         <label
@@ -67,9 +115,9 @@ function Signin() {
                                             name="password"
                                             id="password"
                                             placeholder="••••••••"
-                                            className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  dark:placeholder-gray-400 dark:focus:ring-blue-500"
-                                            required=""
+                                            className={`bg-gray-50 border ${errors.password ? 'border-red-500' : 'border-gray-300'} text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:placeholder-gray-400 dark:focus:border-blue-500`}                                            {...register("password", { required: true })}
                                         />
+                                        <p className="text-red-500">{errors.password?.message}</p>
                                     </div>
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-start">
@@ -100,9 +148,9 @@ function Signin() {
                                     </div>
                                     <button
                                         type="submit"
-                                        className="w-full  bg-primary-600 hover:bg-primary-700  focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 bg-blue-600 text-white "
+                                        className="w-full  bg-primaryColor hover:bg-primary-700  focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 bg-blue-600 text-white "
                                     >
-                                        Sign in
+                                        Sign In
                                     </button>
                                 </form>
                             </div>

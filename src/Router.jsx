@@ -18,7 +18,8 @@ import Messages from "./dashboard/components/Messages";
 import Blog from "./dashboard/components/Blog";
 import Login from "./components/pages/Login";
 import ResetPassword from "./components/pages/ResetPassword";
-import Profile from "./components/ProfileComponent/profile";
+import Profile from "./components/ProfileComponent/Profile";
+import Register from "./components/pages/Register";
 const routes = createBrowserRouter([
     {
         path: "/",
@@ -30,6 +31,7 @@ const routes = createBrowserRouter([
             { path: "/Blogs", element: <Blogs /> },
             { path: "/Articles/:id", element: <Article /> },
             { path: "/Login", element: <Login /> },
+            { path: "/Signup", element: <Register /> },
             { path: "/ResetPassword", element: <ResetPassword /> },
             { path: "/Articles/:ArticleId", element: <Article /> },
             { path: "/Profile", element: <Profile /> },

@@ -4,10 +4,12 @@ import TopShape from '../../assets/topShape.svg'
 import TopRightShape from '../../assets/topRightShape.svg'
 import BottomShape from '../../assets/bottomShape.svg'
 import Group3 from '../../assets/Group 3.svg'
+import { useGetUser } from '../../hooks/useGetUser'
 function Profile() {
+    const { Profile } = useGetUser();
     return (
         <section>
-            <div className='flex flex-col justify-center items-center gap-y-5 p-3 relative'>
+            <div className='flex flex-col justify-center items-center gap-y-5 p-3 relative mt-20'>
                 <img src={TopShape} alt="" className='absolute top-0 left-0 w-32 h-32 hidden md:block' />
                 <img src={TopRightShape} alt="" className='absolute top-0 right-0 w-32 h-32 hidden md:block' />
                 <img src={BottomShape} alt="" className='absolute bottom-0 left-0 w-32 h-32 hidden md:block' />
@@ -16,7 +18,7 @@ function Profile() {
                     <img src={Group3} alt="" />
                     <img src={Group3} alt="" />
                 </div>
-                <p className='text-[50px] md:text-[85px] text-[#3067B1]'>Hi Abdellah  👋</p>
+                <p className='text-[50px] md:text-[85px] text-[#3067B1]'>Hi {Profile.name}  👋</p>
                 <p className='text-[35px] md:text-[85px] text-[#3067B1]'>welcom in your profile</p>
             </div>
             <UserProfile />
