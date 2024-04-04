@@ -8,6 +8,7 @@ import {useNavigate} from 'react-router'
 function Event({id,image,title,desc,count,enrolled_users}) {
     const {headers} = useGetToken()
     const {Profile} = useGetUser()
+    
     const Enrolled = enrolled_users.includes(Profile.user)
     const isAuthenticated = useSelector(({ show_and_hide_aside: { authenticated } }) => authenticated);
     const navigate = useNavigate()
