@@ -1,6 +1,6 @@
 import React from 'react'
 import { BiReplyAll } from 'react-icons/bi'
-import RemoveUser from './RemoveUser'
+import BanUser from './BanUser'
 import { useRef,useState,useEffect } from 'react';
 function Message({user,message,readed}) {
     const Ref = useRef();
@@ -13,7 +13,7 @@ function Message({user,message,readed}) {
   return (
    
     <>
-    {poPub&& <RemoveUser setPopub={setPopub} setrm={setrm}/>}
+    {poPub&& <BanUser setPopub={setPopub} setrm={setrm}/>}
     <li ref={Ref} className="text-gray-700 gap-4 bg-gray-100 hover:bg-gray-200 rounded-lg p-[6px] relative flex justify-between items-center cursor-pointer mt-3" onClick={()=>{
 
       setCancel(false);

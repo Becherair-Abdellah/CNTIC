@@ -1,6 +1,39 @@
 import React from "react";
 import Logo from "../../assets/resetpassword.svg";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function ResetPassword() {
+    const [email, setEmail] = useState("");
+    const navigate = useNavigate();
+    const handelReset = async (e) => {
+        e.preventDefault();
+        const formData = new FormData();
+        formData.append("email", email);
+        try {
+            const url = "https://backend.cntic-club.com/api/password-reset-request/";
+            const response = await axios.post(url, formData).then((res) => res.data);
+            console.log(response);
+            toast.success("Code Sent To Your Email.", {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                onClose: () => navigate("/UpdatePassword")
+            });
+        } catch (error) {
+            toast.error("Enter A valid Email", {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+            });
+        }
+    };
     return (
         <div className=" min-h-screen flex items-center justify-center ">
             <div className="  parent flex justify-evenly items-center">
@@ -41,24 +74,25 @@ function ResetPassword() {
                                 </h1>
                                 <form
                                     className="space-y-4 md:space-y-6"
-                                    action="#"
+                                    onSubmit={handelReset}
                                 >
                                     <div>
                                         <label
                                             htmlFor="email"
                                             className="block mb-2 text-sm font-medium text-gray-900 "
                                         >
-                                            password
+                                            Email
                                         </label>
                                         <input
-                                            type="password"
-                                            name="password"
-                                            id="password"
+                                            type="email"
+                                            name="email"
+                                            id="email"
                                             className="bg-gray-50 border mb-5 border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5   dark:placeholder-gray-400   dark:focus:border-blue-500"
-                                            placeholder="••••••••"
+                                            placeholder="Email......."
                                             required=""
+                                            onChange={(e) => setEmail(e.target.value)}
                                         />
-                                        <label
+                                        {/* <label
                                             htmlFor="email"
                                             className="block mb-2 text-sm font-medium text-gray-900 "
                                         >
@@ -71,13 +105,13 @@ function ResetPassword() {
                                             className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5   dark:placeholder-gray-400   dark:focus:border-blue-500"
                                             placeholder="••••••••"
                                             required=""
-                                        />
+                                        /> */}
                                     </div>
                                     <button
                                         type="submit"
                                         className="w-full  bg-primaryColor hover:bg-primary-700  focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 bg-blue-600 text-white "
                                     >
-                                        Reset
+                                        Send Code to Email
                                     </button>
                                 </form>
                             </div>
@@ -87,6 +121,7 @@ function ResetPassword() {
             </div>
             <div className="w-[120px] h-[120px] rounded-br-full bg-primaryColor left-0 top-[60px] absolute "></div>
             <div className="w-[150px] h-[150px] rounded-tl-full bg-primaryColor right-0  bottom-0 md:bottom-[-2px] absolute z-0 "></div>
+            <ToastContainer />
         </div>
     );
 }

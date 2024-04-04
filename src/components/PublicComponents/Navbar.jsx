@@ -2,28 +2,39 @@ import React, { useEffect, useState } from "react";
 import { BsFillExclamationSquareFill } from "react-icons/bs";
 import { VscThreeBars } from "react-icons/vsc";
 import BtnLogin from "../homeComponenets/BtnLogin";
-import { Link, useLocation } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { logout, login, setUserData } from "../../dashboard/redux/Reducers";
+import { login, logout } from "../../dashboard/redux/Reducers";
 import { useCookies } from "react-cookie";
-import axios from "axios";
 function Navbar() {
+  const navigate = useNavigate()
   const dispatch = useDispatch();
   const [show, setShow] = useState(true);
   const [cookies, setCookies] = useCookies(["access_token"])
   const location = useLocation();
   const isLinkActive = (url) => location.pathname === url;
   const isAuthenticated = useSelector(({ show_and_hide_aside: { authenticated } }) => authenticated);
+  const isAdmin = useSelector(({ show_and_hide_aside: { authenticated, user } }) => {
+    if (authenticated && user && user.groups && user.groups.length > 0) {
+      return user.groups[0] === "Admin";
+    }
+    return false;
+  });
   const Logout = () => {
-    localStorage.clear();
     setCookies('access_token', null)
     dispatch(logout());
   };
   useEffect(() => {
     if (cookies.access_token) {
+      if(isAdmin) {
+        navigate('/dashboard')
+      }else {
+        <Navigate to={'/'} state={{prevUrl: location.pathname}}/>
+      }
       dispatch(login())
     }
-  }, []);
+  }, [isAdmin]);
+  
 
   const Links = [
     {
@@ -31,12 +42,16 @@ function Navbar() {
       link: 'Home'
     },
     {
-      url: '/Events',
-      link: 'Events'
+      url: '/ClientPosts',
+      link: 'Posts'
     },
     {
       url: '/Blogs',
       link: 'Blog'
+    },
+    {
+      url: '/Events',
+      link: 'Events'
     },
     {
       url: '/Contact',
@@ -85,8 +100,7 @@ function Navbar() {
               ))}
             </ul>
             {/* buttons and profile */}
-            <div className="flex justify-center items-center gap-5">
-              {/* display the user info here */}
+            <div className="flex justify-center items-center flex-col md:flex-row gap-5">
               <Link to='/Profile'>
                 <BtnLogin content="Profile" />
               </Link>

@@ -8,6 +8,8 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "../../dashboard/redux/Reducers";
 import { useCookies } from "react-cookie";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function Signin() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -31,22 +33,38 @@ function Signin() {
                 password: data.password
             };
             const response = await axios.post(url, body);
-
-            // Check if response status is OK (2xx)
             if (response.status >= 200 && response.status < 300) {
                 const responseData = response.data;
                 setCookies("access_token", responseData.access);
+                setCookies("refresh_token", responseData.refresh);
+                localStorage.setItem('user', JSON.stringify(responseData.user));
                 dispatch(login());
-                if (responseData.user.group === "admin") {
-                    navigate('/dashboard')
-                } else {
-                    navigate('/')
-                }
+                toast.success("Login Successfully.", {
+                    position: "top-right",
+                    autoClose: 2000, // You can adjust the duration
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    onClose: () => {
+                        if (responseData.user.groups[0] === "Admin") {
+                            navigate('/dashboard')
+                        } else {
+                            navigate('/')
+                        }
+                    }
+                });
+                console.log(responseData);
             } else {
                 console.error('Failed to get tokens. Status:', response.status);
             }
         } catch (error) {
-            console.error('Error:', error.message);
+            toast.error("Failed To login Please check your information.", {
+                position: "top-right",
+                autoClose: 2000, // You can adjust the duration
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+            });
         }
     };
     return (
@@ -160,6 +178,7 @@ function Signin() {
             </div>
             <div className="w-[120px] h-[120px] rounded-br-full bg-primaryColor left-0 top-[60px] absolute "></div>
             <div className="w-[150px] h-[150px] rounded-tl-full bg-primaryColor right-0  bottom-0 md:bottom-[-2px] absolute z-0 "></div>
+            <ToastContainer />
         </div>
     );
 }

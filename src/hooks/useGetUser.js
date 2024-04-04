@@ -17,13 +17,8 @@ export const useGetUser = () => {
       }
     };
 
-    fetchData(); // Call the fetchData function when the component mounts
-
-    // Clean-up function (optional)
-    return () => {
-      // Any clean-up logic if needed
-    };
-  }, []); // Add headers as a dependency to re-fetch data when it changes
+    fetchData();
+  }, []);
 
   return { Profile };
 };

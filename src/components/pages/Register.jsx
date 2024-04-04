@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import Logo from "../../../public/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
 import axios from 'axios'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function Register() {
+    const navigate = useNavigate();
     const [univIdError, setUnivIdError] = useState('');
     const schema = yup.object().shape({
         first_name: yup.string().required('First Name is required'),
@@ -30,8 +33,22 @@ function Register() {
             const url = 'https://backend.cntic-club.com/api/register/';
             const response = await axios.post(url, data);
             console.log('Registration successful:', response.data);
+            toast.success("Account Created Successfully.", {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                onClose: () => navigate('/login')
+            });
         } catch (error) {
-            console.error('Registration failed:', error);
+            toast.error("Failed To Create Account", {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+            });
         }
     };
     return (
@@ -224,6 +241,7 @@ function Register() {
             </div>
             <div className="w-[120px] h-[120px] rounded-br-full bg-primaryColor left-0 top-[60px] absolute "></div>
             <div className="w-[150px] h-[150px] rounded-tl-full bg-primaryColor right-0  bottom-0 md:bottom-[-2px] absolute z-0 "></div>
+            <ToastContainer />
         </div>
     );
 }
